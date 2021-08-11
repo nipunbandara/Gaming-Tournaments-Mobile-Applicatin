@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MAD_app">
-        <activity android:name=".tournament_create"></activity>
+        <activity android:name=".team_create"></activity>
+        <activity android:name=".tournament_create" />
         <activity android:name=".Match_create" />
         <activity
             android:name=".game_create"
