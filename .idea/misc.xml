@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_create.xml" value="0.4" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_display_user.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_user_gamelist.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
       </map>
     </option>
