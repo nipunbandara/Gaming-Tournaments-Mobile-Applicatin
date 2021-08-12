@@ -21,6 +21,8 @@
         <activity
             android:name=".game_org_gamelist"
             android:exported="true" />
+        <activity android:name=".player_playerinfo"></activity>
+        <activity android:name=".player_stats" />
         <activity android:name=".tournament_user_selected_t" />
         <activity android:name=".tournament_home" />
         <activity android:name=".tournament_org_list" />
