@@ -33,8 +33,8 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="176dp"
         android:text="Max Teams : "
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="352dp"
+        android:layout_marginTop="264dp"
         android:text="Select Date and Time :"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +56,7 @@
         android:layout_width="183dp"
         android:layout_height="25dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="456dp"
+        android:layout_marginTop="372dp"
         android:text="Tournament Background  Image : "
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +88,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="213dp"
-        android:layout_height="33dp"
+        android:layout_height="35dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="8dp"
         android:ems="10"
@@ -100,8 +100,8 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="154dp"
-        android:layout_height="33dp"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="88dp"
         android:ems="10"
@@ -112,24 +112,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="139dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="176dp"
-        android:ems="10"
-        android:hint="@string/max_teams"
-        android:inputType="textPersonName"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <EditText
         android:id="@+id/editTextDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/tournament_date"
         android:inputType="date"
@@ -139,10 +126,10 @@
 
     <EditText
         android:id="@+id/editTextTime"
-        android:layout_width="101dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="228dp"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="320dp"
         android:ems="10"
         android:hint="@string/tournament_time"
         android:inputType="time"
@@ -154,8 +141,8 @@
         android:id="@+id/button"
         android:layout_width="103dp"
         android:layout_height="44dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="96dp"
         android:backgroundTint="@color/grey"
         android:text="CREATE"
         app:layout_constraintStart_toStartOf="parent"
@@ -178,10 +165,11 @@
         android:id="@+id/button4"
         android:layout_width="103dp"
         android:layout_height="44dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="72dp"
-        android:backgroundTint="@color/grey"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="@color/white"
         android:text="Cancel"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -190,10 +178,23 @@
         android:layout_width="149dp"
         android:layout_height="33dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:hint="@string/max_teams"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
