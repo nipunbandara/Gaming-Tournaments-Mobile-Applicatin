@@ -5,4 +5,9 @@
     <string name="max_teams">Max</string>
     <string name="tournament_date">Date</string>
     <string name="tournament_time">Time</string>
+    <string name="key_region">Region</string>
+    <string name="key_name">Name</string>
+    <string name="key_description">Description</string>
+    <string name="key_minteams">Min Teams</string>
+    <string name="button_image">Add image</string>
 </resources>
