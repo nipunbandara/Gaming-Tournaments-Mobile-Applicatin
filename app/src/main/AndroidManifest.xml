@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MAD_app">
-        <activity android:name=".team_update"></activity>
+        <activity android:name=".tournament_update"></activity>
+        <activity android:name=".team_update" />
         <activity
             android:name=".game_user_gamelist"
             android:exported="true" />
