@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MAD_app">
+        <activity android:name=".player_playerinfo"></activity>
+        <activity android:name=".player_stats" />
         <activity android:name=".tournament_user_selected_t"></activity>
         <activity android:name=".tournament_home" />
         <activity android:name=".tournament_org_list" />
