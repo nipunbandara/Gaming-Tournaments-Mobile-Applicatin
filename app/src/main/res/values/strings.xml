@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MAD_app</string>
+    <string name="tournament_name">Tournament Name</string>
+    <string name="tournament_type">Type</string>
+    <string name="max_teams">Max</string>
+    <string name="tournament_date">Date</string>
+    <string name="tournament_time">Time</string>
 </resources>
