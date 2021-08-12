@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game_display">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Legends"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overview"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Region"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min Team"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Team"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of players"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="411dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ranking"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="532dp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total subscrptions"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="121dp"
+        android:layout_height="36dp"
+        android:text="Subscribe"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="719dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

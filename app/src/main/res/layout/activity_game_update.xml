@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/submit_button"
+    android:id="@+id/update_heading"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".game_create">
+    tools:context=".game_update">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -159,7 +159,7 @@
         android:layout_marginStart="66dp"
         android:layout_marginTop="31dp"
         android:layout_marginEnd="286dp"
-        android:text="Create"
+        android:text="Update"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -175,13 +175,19 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/update_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginBottom="94dp"
-        android:text="Submit"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Update"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <Button
+        android:id="@+id/cancle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancle"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="623dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
