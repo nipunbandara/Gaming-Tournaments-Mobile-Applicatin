@@ -22,5 +22,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void team_create(View view){
+
+        Intent intent = new Intent(this, team_create.class);
+        startActivity(intent);
+
+    }
 
 }
