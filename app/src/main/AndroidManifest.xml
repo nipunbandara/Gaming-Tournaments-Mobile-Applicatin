@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MAD_app">
+        <activity android:name=".login"></activity>
         <activity android:name=".match_details"></activity>
         <activity android:name=".match_org_update" />
         <activity android:name=".match_org_create" />

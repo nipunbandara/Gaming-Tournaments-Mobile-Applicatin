@@ -25,6 +25,35 @@
     <string name="matches">Matches</string>
     <string name="vs">VS</string>
     <string name="matchcreate">Create Match</string>
+    <string name="organizer">organizer</string>
+    <string name="game">Game</string>
+    <string name="tournament">Tournament</string>
+    <string name="home">Home</string>
+    <string name="tournament_create">Create Tounament</string>
+    <string name="select_game">"Select Game : "</string>
+    <string name="tournament_type_1">Tournament Type :</string>
+    <string name="max_teams_1">Max Teams :</string>
+    <string name="select_date_and_time">Select Date and Time :</string>
+    <string name="tournament_background_image">"Tournament Background Image : "</string>
+    <string name="tournament_31">Kill Confirmed 10V10 #31</string>
+    <string name="organized_by">"Organized by : "</string>
+    <string name="niimoh">Niimoh</string>
+    <string name="accepted_teams">"Accepted Teams : "</string>
+    <string name="ac_teams">5</string>
+    <string name="starts_in">Starts in : 05:11:04</string>
+    <string name="new_tournament">Add a new tournament</string>
+    <string name="added_tournaments">Added Tournaments</string>
+    <string name="tournament_name1" >"Tournament Name : "</string>
+    <string name="create">CREATE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="browse">BROWSE</string>
+    <string name="organizer_niimoh">Organizer : Niimoh</string>
+    <string name="num_of_teams_5">Num of Teams : 5</string>
+    <string name="min_4">Min : 4</string>
+    <string name="max_16">Max : 16</string>
+    <string name="joined_teams">Joinded Teams :</string>
+    <string name="team_name">Team Name</string>
+    <string name="leader_user_name">Leader User Name</string>
 
     <!-- Team -->
     <string name="team_name">Team Name</string>
