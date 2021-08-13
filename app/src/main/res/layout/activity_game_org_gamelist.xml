@@ -39,7 +39,7 @@
         tools:layout_editor_absoluteY="155dp" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/match_org_list_h_round1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mobile Legends"
@@ -79,7 +79,7 @@
         tools:layout_editor_absoluteY="371dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/Btn_cancel"
         android:layout_width="92dp"
         android:layout_height="36dp"
         android:text="Delete"

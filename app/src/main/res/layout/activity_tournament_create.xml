@@ -8,7 +8,7 @@
     tools:context=".tournament_create">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Btn_create"
         android:layout_width="103dp"
         android:layout_height="44dp"
         android:layout_marginStart="52dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/t_bracket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/t_teamA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
@@ -86,7 +86,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/t_round"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
@@ -107,7 +107,7 @@
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/t_bracket" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -120,7 +120,7 @@
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/t_bracket" />
 
     <EditText
         android:id="@+id/editTextDate"
@@ -162,7 +162,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/Btn_cancel"
         android:layout_width="103dp"
         android:layout_height="44dp"
         android:layout_marginStart="260dp"
@@ -182,7 +182,7 @@
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/t_round" />
 
     <EditText
         android:id="@+id/editTextNumberDecimal"
