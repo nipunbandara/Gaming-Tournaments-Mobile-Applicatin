@@ -6,36 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".tournament_org_list">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="76dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/grey"
-        android:text="EDIT"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic3" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="76dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/grey"
-        android:text="DELETE"
-        android:textSize="10sp"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic3" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="244dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="266dp"
+        android:layout_marginTop="12dp"
         android:text="Add a new tournament"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,16 +29,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic2" />
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="212dp"
-        android:text="COD : MW"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic2" />
 
     <TextView
         android:id="@+id/cr_tournamet_topic2"
@@ -75,28 +42,127 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/cr_tournamet_topic3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="sans-serif"
-        android:text="Kill Confirmed 10V10 #31"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="56dp"
         android:clickable="true"
         app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="346dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="252dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/cod_mw_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/game_name_cod_mw"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tournament_name_31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Kill Confirmed 10V10 #31"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <Button
+            android:id="@+id/edit_btn_t1"
+            android:layout_width="76dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/grey"
+            android:text="EDIT"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
+
+        <Button
+            android:id="@+id/delete_btn_t1"
+            android:layout_width="76dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/grey"
+            android:text="DELETE"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/edit_btn_t1"
+            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="346dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/cod_mw_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/game_name_cod_mw"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tournament_name_32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/tournament_name_32"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <Button
+            android:id="@+id/edit_btn_t2"
+            android:layout_width="76dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/grey"
+            android:text="EDIT"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
+
+        <Button
+            android:id="@+id/delete_btn_t2"
+            android:layout_width="76dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/grey"
+            android:text="DELETE"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/edit_btn_t1"
+            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
