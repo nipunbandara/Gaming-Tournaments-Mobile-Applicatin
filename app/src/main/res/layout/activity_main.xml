@@ -40,7 +40,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/descript"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="338dp"
@@ -110,7 +110,7 @@
         android:layout_height="27dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="23dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintBottom_toBottomOf="@+id/descript"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/rank_black" />
 
@@ -121,7 +121,7 @@
         android:layout_marginEnd="41dp"
         android:layout_marginBottom="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/descript"
         app:srcCompat="@drawable/team_black" />
 
     <ImageView

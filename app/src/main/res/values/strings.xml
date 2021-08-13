@@ -10,4 +10,7 @@
     <string name="key_description">Description</string>
     <string name="key_minteams">Min Teams</string>
     <string name="button_image">Add image</string>
+    <string name="name_key">Name</string>
+    <string name="game_name">Name</string>
+    <string name="gamename_key">Name</string>
 </resources>

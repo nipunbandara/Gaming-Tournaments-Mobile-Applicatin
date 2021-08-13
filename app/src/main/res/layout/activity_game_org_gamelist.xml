@@ -101,4 +101,12 @@
         android:text="Delete"
         tools:layout_editor_absoluteX="259dp"
         tools:layout_editor_absoluteY="371dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="51dp"
+        android:layout_height="43dp"
+        android:src="@android:drawable/ic_menu_add"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="54dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
