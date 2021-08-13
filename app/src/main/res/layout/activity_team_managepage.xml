@@ -11,10 +11,21 @@
         android:id="@+id/save23"
         android:layout_width="103dp"
         android:layout_height="44dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="@color/grey"
+        android:text="DELETE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="103dp"
+        android:layout_height="44dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="109dp"
         android:backgroundTint="@color/grey"
-        android:text="CREATE"
+        android:text="EDIT"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
@@ -101,18 +112,6 @@
         app:iconTint="#424242"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <Button
-        android:id="@+id/button44"
-        android:layout_width="103dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="256dp"
-        android:layout_marginTop="205dp"
-        android:backgroundTint="@color/white"
-        android:text="Cancel"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
