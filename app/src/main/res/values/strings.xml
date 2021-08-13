@@ -20,7 +20,7 @@
     <string name="btn_browse">Browse</string>
     <string name="game_name_cod_mw">COD : MW</string>
     <string name="tournament_name_32">Team Death Match 5V5 #32</string>
-    <string name="team_name">Team Name</string>
+
     <string name="round1">Round 1</string>
     <string name="matches">Matches</string>
     <string name="vs">VS</string>
@@ -52,7 +52,7 @@
     <string name="min_4">Min : 4</string>
     <string name="max_16">Max : 16</string>
     <string name="joined_teams">Joinded Teams :</string>
-    <string name="team_name">Team Name</string>
+
     <string name="leader_user_name">Leader User Name</string>
 
     <!-- Team -->
