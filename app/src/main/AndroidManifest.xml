@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MAD_app">
-        <activity android:name=".organizer_home"></activity>
+        <activity android:name=".match_details"></activity>
+        <activity android:name=".match_org_update" />
+        <activity android:name=".match_org_create" />
+        <activity android:name=".match_player_list" />
+        <activity android:name=".match_org_list" />
+        <activity android:name=".organizer_home" />
         <activity android:name=".organizer_organizer_info" />
         <activity android:name=".tournament_update" />
         <activity android:name=".team_update" />
