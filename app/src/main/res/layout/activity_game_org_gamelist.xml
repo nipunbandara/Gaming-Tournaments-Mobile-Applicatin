@@ -55,7 +55,7 @@
         tools:layout_editor_absoluteY="342dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/edit_btn_t1"
         android:layout_width="92dp"
         android:layout_height="36dp"
         android:text="Edit"
@@ -63,7 +63,7 @@
         tools:layout_editor_absoluteY="195dp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/delete_btn_t1"
         android:layout_width="92dp"
         android:layout_height="36dp"
         android:text="Edit"

@@ -1,16 +1,26 @@
 <resources>
+    <!-- Game -->
+    <string name="key_region">Region</string>
+    <string name="key_name">Name</string>
+    <string name="key_description">Description</string>
+    <string name="key_minteams">Min Teams</string>
+    <string name="button_image">Add image</string>
+
+    <!-- Tournament -->
     <string name="app_name">MAD_app</string>
     <string name="tournament_name">Tournament Name</string>
     <string name="tournament_type">Type</string>
     <string name="max_teams">Max</string>
     <string name="tournament_date">Date</string>
     <string name="tournament_time">Time</string>
-    <string name="key_region">Region</string>
-    <string name="key_name">Name</string>
-    <string name="key_description">Description</string>
-    <string name="key_minteams">Min Teams</string>
-    <string name="button_image">Add image</string>
-    <string name="name_key">Name</string>
-    <string name="game_name">Name</string>
-    <string name="gamename_key">Name</string>
+    <string name="tournament_edit">Edit</string>
+    <string name="tournament_participants">Participants</string>
+    <string name="tournament_edit_tournament">Edit Tournament</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_browse">Browse</string>
+    <string name="game_name_cod_mw">COD : MW</string>
+    <string name="tournament_name_32">Team Death Match 5V5 #32</string>
+
+    <!-- Team -->
+    <string name="team_name">Team Name</string>
 </resources>
