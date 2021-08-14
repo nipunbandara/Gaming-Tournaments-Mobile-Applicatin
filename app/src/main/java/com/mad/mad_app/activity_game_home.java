@@ -19,4 +19,34 @@ public class activity_game_home extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void tournament_home_user(View view){
+
+        Intent intent = new Intent(this, tournament_home.class);
+        startActivity(intent);
+
+    }
+
+    public void team_home_user(View view){
+
+        Intent intent = new Intent(this, team_home.class);
+        startActivity(intent);
+
+    }
+
+    public void game_home_user(View view){
+
+        Intent intent = new Intent(this, game_user_gamelist.class);
+        startActivity(intent);
+
+    }
+
+    public void user_create_user(View view){
+
+        Intent intent = new Intent(this, player_playerinfo.class);
+        startActivity(intent);
+
+    }
+
+
 }

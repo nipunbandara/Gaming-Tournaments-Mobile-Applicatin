@@ -28,4 +28,29 @@ public class game_org_gamelist extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void game_create_org(View view){
+
+        Intent intent = new Intent(this, game_org_gamelist.class);
+        startActivity(intent);
+    }
+
+    public void tournament_create_org(View view){
+
+        Intent intent = new Intent(this, tournament_org_list.class);
+        startActivity(intent);
+    }
+
+    public void organizer_create_org(View view){
+
+        Intent intent = new Intent(this, organizer_organizer_info.class);
+        startActivity(intent);
+    }
+
+    public void home_org(View view){
+
+        Intent intent = new Intent(this, organizer_home.class);
+        startActivity(intent);
+
+    }
+
 }
