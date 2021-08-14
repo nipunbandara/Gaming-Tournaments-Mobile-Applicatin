@@ -64,10 +64,12 @@
         android:id="@+id/login_player"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
         android:layout_marginTop="44dp"
         android:hint="@string/login"
-        app:layout_constraintTop_toBottomOf="@+id/password_player"
-        tools:layout_editor_absoluteX="152dp" />
+        android:onClick="user_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_player" />
 
     <TextView
         android:id="@+id/createanaccount"
