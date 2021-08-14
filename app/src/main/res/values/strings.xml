@@ -59,4 +59,6 @@
     <string name="team_name">Team Name</string>
     <string name="Tmatchdetails">Match Details</string>
     <string name="match_winner">Winner :</string>
+    <string name="organization">Organization</string>
+    <string name="player">Player</string>
 </resources>

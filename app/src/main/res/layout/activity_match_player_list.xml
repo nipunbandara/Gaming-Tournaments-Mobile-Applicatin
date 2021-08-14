@@ -6,19 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".match_player_list">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar3"
-            android:layout_width="394dp"
-            android:layout_height="57dp"
-            android:background="#424242"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="394dp"
+        android:layout_height="57dp"
+        android:background="#424242"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
+    <TextView
             android:id="@+id/textView43"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,16 +29,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView14"
-            android:layout_width="39dp"
-            android:layout_height="29dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/console_black"
-            tools:layout_editor_absoluteY="648dp" />
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="39dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3"
+        app:srcCompat="@drawable/console_black" />
 
-        <TextView
+    <TextView
             android:id="@+id/textView44"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,15 +50,19 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView15"
-            android:layout_width="30dp"
-            android:layout_height="27dp"
-            app:srcCompat="@drawable/rank_black"
-            tools:layout_editor_absoluteX="344dp"
-            tools:layout_editor_absoluteY="648dp" />
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3"
+        app:srcCompat="@drawable/rank_black" />
 
-        <TextView
+    <TextView
             android:id="@+id/textView45"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,36 +84,42 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView16"
-            android:layout_width="32dp"
-            android:layout_height="27dp"
-            android:layout_marginStart="183dp"
-            android:layout_marginBottom="24dp"
-            android:onClick="home"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/home_black" />
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/home_black" />
 
-        <ImageView
-            android:id="@+id/imageView17"
-            android:layout_width="32dp"
-            android:layout_height="27dp"
-            app:srcCompat="@drawable/team_black"
-            tools:layout_editor_absoluteX="258dp"
-            tools:layout_editor_absoluteY="649dp" />
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3"
+        app:srcCompat="@drawable/team_black" />
 
-        <ImageView
-            android:id="@+id/imageView18"
-            android:layout_width="33dp"
-            android:layout_height="27dp"
-            android:layout_marginEnd="260dp"
-            android:layout_marginBottom="23dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/cupwhite" />
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3"
+        app:layout_constraintVertical_bias="0.857"
+        app:srcCompat="@drawable/cupwhite" />
 
-        <TextView
+    <TextView
             android:id="@+id/textView48"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -150,18 +161,6 @@
         android:layout_marginBottom="212dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/Btn_edit_match2"
-            android:layout_width="76dp"
-            android:layout_height="33dp"
-            android:layout_marginStart="135dp"
-            android:layout_marginTop="85dp"
-            android:backgroundTint="@color/grey"
-            android:text="EDIT"
-            android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
 
         <ImageView
             android:id="@+id/match2_team2_img"
@@ -225,21 +224,10 @@
         android:layout_width="346dp"
         android:layout_height="129dp"
         android:layout_marginStart="20dp"
+        android:onClick="match_details"
         android:layout_marginBottom="352dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/Btn_edit_match2"
-            android:layout_width="76dp"
-            android:layout_height="33dp"
-            android:layout_marginStart="135dp"
-            android:layout_marginTop="85dp"
-            android:backgroundTint="@color/grey"
-            android:text="EDIT"
-            android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
 
         <ImageView
             android:id="@+id/match2_team2_img"
@@ -307,18 +295,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <Button
-            android:id="@+id/Btn_edit_match2"
-            android:layout_width="76dp"
-            android:layout_height="33dp"
-            android:layout_marginStart="135dp"
-            android:layout_marginTop="85dp"
-            android:backgroundTint="@color/grey"
-            android:text="EDIT"
-            android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
-
         <ImageView
             android:id="@+id/match2_team2_img"
             android:layout_width="79dp"
@@ -384,18 +360,6 @@
         android:layout_marginBottom="492dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/Btn_edit_match2"
-            android:layout_width="76dp"
-            android:layout_height="33dp"
-            android:layout_marginStart="135dp"
-            android:layout_marginTop="85dp"
-            android:backgroundTint="@color/grey"
-            android:text="EDIT"
-            android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
 
         <ImageView
             android:id="@+id/match2_team2_img"

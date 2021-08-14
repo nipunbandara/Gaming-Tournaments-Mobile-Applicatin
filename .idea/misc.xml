@@ -16,12 +16,13 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_display_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_user_gamelist.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_login.xml" value="0.24780701754385964" />
         <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_main.xml" value="0.2771929824561403" />
-        <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_match_details.xml" value="0.25" />
+        <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_match_details.xml" value="0.67" />
         <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_match_org_create.xml" value="0.3296875" />
         <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_match_org_list.xml" value="0.25" />
         <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_match_org_update.xml" value="0.2771929824561403" />
-        <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_match_player_list.xml" value="0.2771929824561403" />
+        <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_match_player_list.xml" value="0.33" />
         <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_organizer_home.xml" value="0.2771929824561403" />
         <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_create.xml" value="0.2771929824561403" />
         <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_home.xml" value="0.2771929824561403" />

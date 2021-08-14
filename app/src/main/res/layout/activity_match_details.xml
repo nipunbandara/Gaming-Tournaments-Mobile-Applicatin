@@ -33,10 +33,11 @@
         android:id="@+id/imageView21"
         android:layout_width="39dp"
         android:layout_height="29dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/console_black"
-        tools:layout_editor_absoluteY="648dp" />
+        app:layout_constraintTop_toTopOf="@+id/toolbar4"
+        app:srcCompat="@drawable/console_black" />
 
     <TextView
         android:id="@+id/textView51"
@@ -53,9 +54,13 @@
         android:id="@+id/imageView22"
         android:layout_width="30dp"
         android:layout_height="27dp"
-        app:srcCompat="@drawable/rank_black"
-        tools:layout_editor_absoluteX="344dp"
-        tools:layout_editor_absoluteY="648dp" />
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView24"
+        app:layout_constraintTop_toTopOf="@+id/toolbar4"
+        app:srcCompat="@drawable/rank_black" />
 
     <TextView
         android:id="@+id/textView52"
@@ -83,29 +88,33 @@
         android:id="@+id/imageView23"
         android:layout_width="32dp"
         android:layout_height="27dp"
-        android:layout_marginStart="183dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="20dp"
         android:onClick="home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView25"
         app:srcCompat="@drawable/home_black" />
 
     <ImageView
         android:id="@+id/imageView24"
         android:layout_width="32dp"
         android:layout_height="27dp"
-        app:srcCompat="@drawable/team_black"
-        tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="649dp" />
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/toolbar4"
+        app:srcCompat="@drawable/team_black" />
 
     <ImageView
         android:id="@+id/imageView25"
         android:layout_width="33dp"
         android:layout_height="27dp"
-        android:layout_marginEnd="260dp"
+        android:layout_marginStart="56dp"
         android:layout_marginBottom="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView21"
+        app:layout_constraintTop_toTopOf="@+id/toolbar4"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/cupwhite" />
 
     <TextView
@@ -154,18 +163,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/T_match_details"
         app:layout_constraintVertical_bias="0.303">
-
-        <Button
-            android:id="@+id/Btn_edit_match2"
-            android:layout_width="76dp"
-            android:layout_height="33dp"
-            android:layout_marginStart="135dp"
-            android:layout_marginTop="85dp"
-            android:backgroundTint="@color/grey"
-            android:text="EDIT"
-            android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
 
         <ImageView
             android:id="@+id/match2_team2_img"
@@ -226,68 +223,6 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/team1_member1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wretched Dragon"
-        app:layout_constraintTop_toBottomOf="@+id/match2_team1_name2"
-        tools:layout_editor_absoluteX="104dp" />
-
-    <TextView
-        android:id="@+id/team2_member3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Legendary Natsu"
-        app:layout_constraintTop_toBottomOf="@+id/team2_member2"
-        tools:layout_editor_absoluteX="103dp" />
-
-    <TextView
-        android:id="@+id/team2_member4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Legendary Luffy"
-        app:layout_constraintTop_toBottomOf="@+id/team2_member3"
-        tools:layout_editor_absoluteX="104dp" />
-
-    <TextView
-        android:id="@+id/team1_member3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Dynamic Dragon"
-        app:layout_constraintTop_toBottomOf="@+id/team1_member2"
-        tools:layout_editor_absoluteX="104dp" />
-
-    <TextView
-        android:id="@+id/team2_member5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Legendary Simpsons"
-        app:layout_constraintTop_toBottomOf="@+id/team2_member4"
-        tools:layout_editor_absoluteX="104dp" />
-
-    <TextView
-        android:id="@+id/team1_member4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Balling Dragon"
-        app:layout_constraintTop_toBottomOf="@+id/team1_member3"
-        tools:layout_editor_absoluteX="104dp" />
-
-    <TextView
-        android:id="@+id/team2_member1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Legendary Arthur"
-        app:layout_constraintTop_toBottomOf="@+id/match2_team2_name2"
-        tools:layout_editor_absoluteX="103dp" />
-
-    <TextView
         android:id="@+id/match_winner_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -295,35 +230,128 @@
         android:text="Blazing Dragons"
         app:layout_constraintBaseline_toBaselineOf="@+id/match_winner"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintHorizontal_bias="0.009"
         app:layout_constraintStart_toEndOf="@+id/match_winner" />
-
-    <TextView
-        android:id="@+id/team1_member5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Flame Dragon"
-        app:layout_constraintTop_toBottomOf="@+id/team1_member4"
-        tools:layout_editor_absoluteX="104dp" />
-
-    <TextView
-        android:id="@+id/team2_member2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Legendary Merlin"
-        app:layout_constraintTop_toBottomOf="@+id/team2_member1"
-        tools:layout_editor_absoluteX="104dp" />
 
     <TextView
         android:id="@+id/match2_team1_name2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
         android:text="Blazing"
-        app:layout_constraintTop_toBottomOf="@+id/match_winner"
-        tools:layout_editor_absoluteX="60dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match_winner" />
+
+    <TextView
+        android:id="@+id/team1_member1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="8dp"
+        android:text="Wretched Dragon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match2_team1_name2" />
+
+    <TextView
+        android:id="@+id/team2_member1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="12dp"
+        android:text="Legendary Arthur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match2_team2_name2" />
+
+    <TextView
+        android:id="@+id/match2_team2_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:text="Legends"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_member5" />
+
+    <TextView
+        android:id="@+id/team2_member3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="8dp"
+        android:text="Legendary Natsu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team2_member2" />
+
+    <TextView
+        android:id="@+id/team2_member4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="8dp"
+        android:text="Legendary Luffy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team2_member3" />
+
+    <TextView
+        android:id="@+id/team1_member2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="4dp"
+        android:text="Twin Dragon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_member1" />
+
+    <TextView
+        android:id="@+id/team1_member4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="4dp"
+        android:text="Balling Dragon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_member3" />
+
+    <TextView
+        android:id="@+id/team2_member5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="8dp"
+        android:text="Legendary Simpsons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team2_member4" />
+
+    <TextView
+        android:id="@+id/team1_member3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="12dp"
+        android:text="Dynamic Dragon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_member2" />
+
+    <TextView
+        android:id="@+id/team2_member2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="8dp"
+        android:text="Legendary Merlin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team2_member1" />
+
+    <TextView
+        android:id="@+id/team1_member5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="12dp"
+        android:text="Flame Dragon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_member4" />
 
     <TextView
         android:id="@+id/match_winner"
@@ -334,23 +362,5 @@
         android:hint="@string/match_winner"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/match_round" />
-
-    <TextView
-        android:id="@+id/match2_team2_name2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Legends"
-        app:layout_constraintTop_toBottomOf="@+id/team1_member5"
-        tools:layout_editor_absoluteX="60dp" />
-
-    <TextView
-        android:id="@+id/team1_member2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Twin Dragon"
-        app:layout_constraintTop_toBottomOf="@+id/team1_member1"
-        tools:layout_editor_absoluteX="104dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
