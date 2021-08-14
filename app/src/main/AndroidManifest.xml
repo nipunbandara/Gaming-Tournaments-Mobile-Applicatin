@@ -18,6 +18,9 @@
         <activity android:name=".organizer_home" />
         <activity android:name=".organizer_organizer_info" />
         <activity android:name=".tournament_update" />
+        <activity android:name=".team_managepage" />
+        <activity android:name=".team_home" />
+        <activity android:name=".team_create" />
         <activity android:name=".team_update" />
         <activity
             android:name=".game_user_gamelist"
@@ -36,7 +39,6 @@
         <activity android:name=".tournament_user_selected_t" />
         <activity android:name=".tournament_home" />
         <activity android:name=".tournament_org_list" />
-        <activity android:name=".team_create" />
         <activity android:name=".tournament_create" />
         <activity android:name=".Match_create" />
         <activity

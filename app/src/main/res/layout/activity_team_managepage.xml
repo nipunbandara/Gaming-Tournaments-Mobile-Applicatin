@@ -11,12 +11,23 @@
         android:id="@+id/save23"
         android:layout_width="103dp"
         android:layout_height="44dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="134dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="108dp"
         android:backgroundTint="@color/grey"
-        android:text="SAVE"
+        android:text="DELETE"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView101" />
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="103dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="109dp"
+        android:backgroundTint="@color/grey"
+        android:text="EDIT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <TextView
         android:id="@+id/textView978"
@@ -35,186 +46,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="265dp"
-        android:text="Team Players:"
+        android:text="Team Logo:"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
-
-    <TextView
-        android:id="@+id/textView101"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="18dp"
-        android:text="1.User1:"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textViewr1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="16dp"
-        android:text="Remove"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textViewr2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="32dp"
-        android:text="Remove"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textViewr3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="48dp"
-        android:text="Remove"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textViewr4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="64dp"
-        android:text="Remove"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textViewr5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="80dp"
-        android:text="Remove"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textViewr6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="96dp"
-        android:text="Remove"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textViewr7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="112dp"
-        android:text="Remove"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textViewr8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="128dp"
-        android:text="Remove"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textView102"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="32dp"
-        android:text="2.User2:"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textView103"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="48dp"
-        android:text="3.User3:"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textView104"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="64dp"
-        android:text="4.User4:"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textView105"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="80dp"
-        android:text="5.User5:"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textView106"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="96dp"
-        android:text="6.User6:"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textView107"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="112dp"
-        android:text="7.User7:"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
-
-    <TextView
-        android:id="@+id/textView108"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="128dp"
-        android:text="8.User8:"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
 
     <TextView
         android:id="@+id/cr_tournamet_topic"
@@ -223,7 +58,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:fontFamily="sans-serif"
-        android:text="Manage Team"
+        android:text="Create Team"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -266,16 +101,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView978" />
 
     <Button
-        android:id="@+id/button44"
-        android:layout_width="103dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="256dp"
-        android:layout_marginTop="205dp"
-        android:backgroundTint="@color/white"
-        android:text="Cancel"
-        android:textColor="@color/black"
+        android:id="@+id/button2"
+        android:layout_width="94dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="@color/light_grey"
+        android:text="Browse"
+        android:textSize="12sp"
+        app:iconTint="#424242"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
