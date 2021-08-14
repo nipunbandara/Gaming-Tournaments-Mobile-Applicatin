@@ -15,16 +15,30 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void tournament_home(View view){
+    public void tournament_home_user(View view){
 
         Intent intent = new Intent(this, tournament_home.class);
         startActivity(intent);
 
     }
 
-    public void team_create(View view){
+    public void team_home_user(View view){
 
-        Intent intent = new Intent(this, team_create.class);
+        Intent intent = new Intent(this, team_home.class);
+        startActivity(intent);
+
+    }
+
+    public void game_home_user(View view){
+
+        Intent intent = new Intent(this, game_user_gamelist.class);
+        startActivity(intent);
+
+    }
+
+    public void user_create_user(View view){
+
+        Intent intent = new Intent(this, player_playerinfo.class);
         startActivity(intent);
 
     }
