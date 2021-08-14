@@ -9,8 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MAD_app">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".match_details"></activity>
+        <activity
+            android:name=".signup_player"
+            android:exported="true" />
+        <activity
+            android:name=".login_org"
+            android:exported="true" />
+        <activity
+            android:name=".login_player"
+            android:exported="true" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".match_details" />
         <activity android:name=".match_org_update" />
         <activity android:name=".match_org_create" />
         <activity android:name=".match_player_list" />
