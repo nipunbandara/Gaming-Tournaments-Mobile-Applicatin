@@ -14,16 +14,16 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    public void user_home(View view){
+    public void login_player(View view){
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, login_player.class);
         startActivity(intent);
 
     }
 
-    public void organizer_home(View view){
+    public void login_org(View view){
 
-        Intent intent = new Intent(this, organizer_home.class);
+        Intent intent = new Intent(this, login_org.class);
         startActivity(intent);
 
     }
