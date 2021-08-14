@@ -25,6 +25,9 @@
     <string name="game_name_cod_mw">COD : MW</string>
     <string name="tournament_name_32">Team Death Match 5V5 #32</string>
 
+    <string name="Tmatchdetails">Match Details</string>
+    <string name="match_winner">Winner :</string>
+
     <string name="round1">Round 1</string>
     <string name="matches">Matches</string>
     <string name="vs">VS</string>
@@ -119,4 +122,7 @@
     <string name="cod1">Call Of Duty</string>
     <string name="Mobile_led">Mobile Legends</string>
     <string name="Valorant1">Valorant</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="register_now">Register Now</string>
 </resources>
