@@ -36,7 +36,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void user_create_user(View view){
+    public void user_home_user(View view){
+
+        Intent intent = new Intent(this, player_playerinfo.class);
+        startActivity(intent);
+
+    }
+
+    public void home_user(View view){
 
         Intent intent = new Intent(this, player_playerinfo.class);
         startActivity(intent);

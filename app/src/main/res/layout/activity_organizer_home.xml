@@ -70,6 +70,7 @@
         android:layout_height="27dp"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="24dp"
+        android:onClick="home_org"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/homewhite" />
@@ -80,6 +81,7 @@
         android:layout_height="27dp"
         android:layout_marginEnd="130dp"
         android:layout_marginBottom="24dp"
+        android:onClick="tournament_home_org"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/cup_black" />
@@ -90,6 +92,7 @@
         android:layout_height="29dp"
         android:layout_marginStart="122dp"
         android:layout_marginBottom="2dp"
+        android:onClick="game_home_org"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/console_black" />
@@ -98,17 +101,21 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="132dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="132dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="70dp"
         android:text="@string/new_tournament"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="250dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <ImageView
         android:id="@+id/imageView21"
@@ -116,6 +123,7 @@
         android:layout_height="29dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="3dp"
+        android:onClick="organizer_home_org"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/organizer_black" />

@@ -76,10 +76,12 @@
         android:id="@+id/login_player5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
         android:layout_marginTop="32dp"
         android:hint="@string/login"
-        app:layout_constraintTop_toBottomOf="@+id/password_player5"
-        tools:layout_editor_absoluteX="132dp" />
+        android:onClick="organizer_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_player5" />
 
     <TextView
         android:id="@+id/signup5"
