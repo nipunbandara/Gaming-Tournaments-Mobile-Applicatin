@@ -148,6 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
         android:layout_marginBottom="76dp"
+        android:backgroundTint="@color/grey"
         app:layout_constraintBottom_toTopOf="@+id/toolbar2"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="@string/create_Addimage" />
@@ -180,6 +181,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/grey"
         android:text="@string/create_Submit"
         app:layout_constraintBottom_toTopOf="@+id/toolbar2"
         app:layout_constraintStart_toStartOf="parent" />

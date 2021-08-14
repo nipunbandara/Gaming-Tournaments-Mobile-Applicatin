@@ -9,6 +9,84 @@
 
     <!-- nav bar -->
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="346dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/cod_mw_name"
+            android:layout_width="148dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/mobile_legends"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/edit_btn_t1"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/grey"
+            android:text="@string/user_Unsubscribe"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="127dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-18dp"
+            app:srcCompat="@drawable/moblielegends" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="346dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="388dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/cod_mw_name"
+            android:layout_width="148dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/mobile_legends"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/edit_btn_t1"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/grey"
+            android:text="@string/user_Unsubscribe"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="127dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-18dp"
+            app:srcCompat="@drawable/moblielegends" />
+
+    </androidx.cardview.widget.CardView>
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="394dp"
@@ -182,98 +260,49 @@
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
         android:text="@string/user_subsgame"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="46dp"
-        android:text="@string/user_Mobile_legends"
-        app:layout_constraintStart_toEndOf="@+id/imageView18"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="346dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="143dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="17dp"
-        android:text="@string/user_Unsubscribe"
-        app:layout_constraintStart_toEndOf="@+id/imageView18"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        <TextView
+            android:id="@+id/cod_mw_name"
+            android:layout_width="148dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/Valorant1"
+            android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="143dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/user_Unsubscribe"
-        app:layout_constraintStart_toEndOf="@+id/imageView17"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        <Button
+            android:id="@+id/edit_btn_t1"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/grey"
+            android:text="@string/user_Unsubscribe"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
 
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="143dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="84dp"
-        android:text="@string/user_Unsubscribe1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="127dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-18dp"
+            app:srcCompat="@drawable/valo" />
 
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/user_Valorant"
-        app:layout_constraintStart_toEndOf="@+id/imageView17"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="59dp"
-        android:layout_marginEnd="116dp"
-        android:text="@string/user_TomCl"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="153dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:src="@drawable/valorant6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
-
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="167dp"
-        android:layout_height="132dp"
-        android:src="@drawable/mbl"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
-
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="131dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="19dp"
-        android:src="@drawable/tom123"
-        app:layout_constraintEnd_toStartOf="@+id/button11"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:srcCompat="@drawable/tom123" />
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
