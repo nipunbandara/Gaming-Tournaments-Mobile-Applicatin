@@ -50,7 +50,7 @@
     <string name="starts_in">Starts in : 05:11:04</string>
     <string name="new_tournament">Add a new tournament</string>
     <string name="added_tournaments">Added Tournaments</string>
-    <string name="tournament_name1" >"Tournament Name : "</string>
+    <string name="tournament_name1">"Tournament Name : "</string>
     <string name="create">CREATE</string>
     <string name="cancel">CANCEL</string>
     <string name="browse">BROWSE</string>
@@ -127,4 +127,9 @@
     <string name="register_now">Register Now</string>
     <string name="organization">Organization</string>
     <string name="player">Player</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="next">Next</string>
 </resources>
