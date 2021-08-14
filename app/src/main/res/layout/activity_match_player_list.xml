@@ -163,12 +163,12 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/match2_team2_img"
+            android:id="@+id/match3_team1_img"
             android:layout_width="79dp"
             android:layout_height="83dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/team5" />
 
         <TextView
             android:id="@+id/match2_team2_name"
@@ -179,12 +179,12 @@
             android:text="Legends" />
 
         <ImageView
-            android:id="@+id/match2_team1_img"
+            android:id="@+id/match3_team2_img"
             android:layout_width="79dp"
             android:layout_height="83dp"
             android:layout_marginStart="250dp"
             android:layout_marginTop="10dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/team6" />
 
         <TextView
             android:id="@+id/match2_team1_name"
@@ -230,12 +230,12 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/match2_team2_img"
+            android:id="@+id/match3_team1_img"
             android:layout_width="79dp"
             android:layout_height="83dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/team1" />
 
         <TextView
             android:id="@+id/match2_team2_name"
@@ -246,12 +246,12 @@
             android:text="Legends" />
 
         <ImageView
-            android:id="@+id/match2_team1_img"
+            android:id="@+id/match3_team2_img"
             android:layout_width="79dp"
             android:layout_height="83dp"
             android:layout_marginStart="250dp"
             android:layout_marginTop="10dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/team2" />
 
         <TextView
             android:id="@+id/match2_team1_name"
@@ -296,12 +296,12 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/match2_team2_img"
+            android:id="@+id/match3_team1_img"
             android:layout_width="79dp"
             android:layout_height="83dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/team7" />
 
         <TextView
             android:id="@+id/match2_team2_name"
@@ -312,12 +312,12 @@
             android:text="Legends" />
 
         <ImageView
-            android:id="@+id/match2_team1_img"
+            android:id="@+id/match3_team2_img"
             android:layout_width="79dp"
             android:layout_height="83dp"
             android:layout_marginStart="250dp"
             android:layout_marginTop="10dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/team8" />
 
         <TextView
             android:id="@+id/match2_team1_name"
@@ -362,12 +362,12 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/match2_team2_img"
+            android:id="@+id/match3_team1_img"
             android:layout_width="79dp"
             android:layout_height="83dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/team3" />
 
         <TextView
             android:id="@+id/match2_team2_name"
@@ -378,12 +378,12 @@
             android:text="Legends" />
 
         <ImageView
-            android:id="@+id/match2_team1_img"
+            android:id="@+id/match3_team2_img"
             android:layout_width="79dp"
             android:layout_height="83dp"
             android:layout_marginStart="250dp"
             android:layout_marginTop="10dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/team4" />
 
         <TextView
             android:id="@+id/match2_team1_name"
