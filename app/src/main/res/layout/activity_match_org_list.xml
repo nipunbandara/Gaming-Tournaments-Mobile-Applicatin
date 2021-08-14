@@ -120,17 +120,6 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/add_new_match"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="266dp"
-        android:layout_marginTop="12dp"
-        android:text="Add a new Match"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton" />
-
-    <TextView
         android:id="@+id/match_org_list_h_round1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -159,19 +148,32 @@
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="44dp"
         android:clickable="true"
+        android:onClick="match_org_create"
         app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
+    <TextView
+        android:id="@+id/add_new_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="16dp"
+        android:text="Add a new Match"
+        android:onClick="match_org_create"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="346dp"
         android:layout_height="129dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="228dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="224dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -182,6 +184,7 @@
             android:layout_marginStart="135dp"
             android:layout_marginTop="85dp"
             android:backgroundTint="@color/grey"
+            android:onClick="match_org_update"
             android:text="EDIT"
             android:textSize="10sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -248,8 +251,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="346dp"
         android:layout_height="129dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="368dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="364dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -260,6 +263,7 @@
             android:layout_marginStart="135dp"
             android:layout_marginTop="85dp"
             android:backgroundTint="@color/grey"
+            android:onClick="match_org_update"
             android:text="EDIT"
             android:textSize="10sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -326,8 +330,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="346dp"
         android:layout_height="129dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -338,6 +342,7 @@
             android:layout_marginStart="135dp"
             android:layout_marginTop="85dp"
             android:backgroundTint="@color/grey"
+            android:onClick="match_org_update"
             android:text="EDIT"
             android:textSize="10sp"
             app:layout_constraintStart_toStartOf="parent"
