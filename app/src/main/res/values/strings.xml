@@ -125,4 +125,6 @@
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
     <string name="register_now">Register Now</string>
+    <string name="organization">Organization</string>
+    <string name="player">Player</string>
 </resources>
