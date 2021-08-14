@@ -174,31 +174,22 @@ tools:context=".activity_game_home">
         android:id="@+id/imageView16"
         android:layout_width="294dp"
         android:layout_height="156dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="60dp"
+        android:onClick="view_ml_game"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView45"
-        app:srcCompat="@drawable/cod" />
+        app:srcCompat="@drawable/moblielegends"
+        tools:layout_editor_absoluteY="127dp" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="288dp"
         android:layout_height="208dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:onClick="view_ml_game"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView46"
         app:srcCompat="@drawable/valo" />
-
-    <TextView
-        android:id="@+id/textView45"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="44dp"
-        android:text="@string/cod1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ID_tournament1" />
 
     <TextView
         android:id="@+id/textView46"
@@ -214,10 +205,8 @@ tools:context=".activity_game_home">
         android:id="@+id/textView48"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="9dp"
         android:text="@string/Valorant1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="593dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

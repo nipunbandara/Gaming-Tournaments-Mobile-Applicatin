@@ -6,8 +6,110 @@
     android:layout_height="match_parent"
     tools:context=".game_org_gamelist">
 
+
+      <!-- nav bar -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="394dp"
+        android:layout_height="57dp"
+        android:background="#424242"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/game"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="316dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/organizer"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/tournament"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/home"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_black" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cup_black" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="39dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/console_white" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="39dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/organizer_black" />
+
+    <!-- nav bar ends -->
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
+        android:onClick="create_new_game"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -27,7 +129,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/cod_mw_name"
+            android:id="@+id/cod_mw_name1"
             android:layout_width="140dp"
             android:layout_height="27dp"
             android:layout_marginStart="150dp"
@@ -36,19 +138,20 @@
             android:textSize="16sp" />
 
         <Button
-            android:id="@+id/edit_btn_t1"
+            android:id="@+id/edit_btn_t11"
             android:layout_width="76dp"
             android:layout_height="33dp"
             android:layout_marginStart="150dp"
             android:layout_marginTop="50dp"
             android:backgroundTint="@color/grey"
+            android:onClick="update_new_game"
             android:text="EDIT"
             android:textSize="10sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
 
         <Button
-            android:id="@+id/delete_btn_t1"
+            android:id="@+id/delete_btn_t12"
             android:layout_width="76dp"
             android:layout_height="33dp"
             android:layout_marginStart="250dp"
@@ -60,7 +163,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
 
         <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/imageView112"
             android:layout_width="127dp"
             android:layout_height="162dp"
             android:layout_marginStart="8dp"
@@ -73,35 +176,41 @@
         android:id="@+id/ID_tournament"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="28dp"
         android:text="@string/org_games"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="28dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
+        android:layout_marginTop="61dp"
         android:text="@string/add_games"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="109dp" />
+        app:layout_constraintTop_toBottomOf="@+id/ID_tournament" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="4dp"
         android:text="@string/add_a_game"
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="89dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton2" />
 
     <TextView
         android:id="@+id/match_org_list_h_round1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
+        android:layout_marginTop="76dp"
         android:text="@string/mobile_legends"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="776dp" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="346dp"
@@ -112,7 +221,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/cod_mw_name"
+            android:id="@+id/cod_mw_name2"
             android:layout_width="89dp"
             android:layout_height="27dp"
             android:layout_marginStart="150dp"
@@ -121,7 +230,8 @@
             android:textSize="16sp" />
 
         <Button
-            android:id="@+id/edit_btn_t1"
+            android:id="@+id/edit_btn_t12"
+            android:onClick="update_new_game"
             android:layout_width="76dp"
             android:layout_height="33dp"
             android:layout_marginStart="150dp"
@@ -133,7 +243,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
 
         <Button
-            android:id="@+id/delete_btn_t1"
+            android:id="@+id/delete_btn_t13"
             android:layout_width="76dp"
             android:layout_height="33dp"
             android:layout_marginStart="250dp"
@@ -145,7 +255,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
 
         <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/imageView113"
             android:layout_width="127dp"
             android:layout_height="162dp"
             android:layout_marginStart="8dp"
@@ -178,6 +288,7 @@
             android:layout_marginStart="150dp"
             android:layout_marginTop="50dp"
             android:backgroundTint="@color/grey"
+            android:onClick="update_new_game"
             android:text="EDIT"
             android:textSize="10sp"
             app:layout_constraintStart_toStartOf="parent"
