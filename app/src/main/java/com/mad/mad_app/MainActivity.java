@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void game_home_user(View view){
 
-        Intent intent = new Intent(this, game_user_gamelist.class);
+        Intent intent = new Intent(this, activity_game_home.class);
         startActivity(intent);
 
     }
