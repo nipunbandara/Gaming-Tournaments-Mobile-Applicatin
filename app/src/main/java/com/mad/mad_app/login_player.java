@@ -6,17 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class match_player_list extends AppCompatActivity {
+public class login_player extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_match_player_list);
+        setContentView(R.layout.activity_login_player);
     }
 
-    public void match_details(View view){
+    public void user_home(View view){
 
-        Intent intent = new Intent(this, match_details.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
 
     }

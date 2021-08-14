@@ -14,19 +14,19 @@ public class organizer_home extends AppCompatActivity {
         setContentView(R.layout.activity_organizer_home);
     }
 
-    public void game_create_org(View view){
+    public void game_home_org(View view){
 
         Intent intent = new Intent(this, game_org_gamelist.class);
         startActivity(intent);
     }
 
-    public void tournament_create_org(View view){
+    public void tournament_home_org(View view){
 
         Intent intent = new Intent(this, tournament_org_list.class);
         startActivity(intent);
     }
 
-    public void organizer_create_org(View view){
+    public void organizer_home_org(View view){
 
         Intent intent = new Intent(this, organizer_organizer_info.class);
         startActivity(intent);
