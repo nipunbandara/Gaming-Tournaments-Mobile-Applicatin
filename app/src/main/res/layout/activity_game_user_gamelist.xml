@@ -4,101 +4,305 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".player_game">
+    tools:context=".game_user_gamelist">
+
+
+    <!-- nav bar -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="346dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/cod_mw_name"
+            android:layout_width="148dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/mobile_legends"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/edit_btn_t1"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/grey"
+            android:text="@string/user_Unsubscribe"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="127dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-18dp"
+            app:srcCompat="@drawable/moblielegends" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="346dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="388dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/cod_mw_name"
+            android:layout_width="148dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/mobile_legends"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/edit_btn_t1"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/grey"
+            android:text="@string/user_Unsubscribe"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="127dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-18dp"
+            app:srcCompat="@drawable/moblielegends" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="394dp"
+        android:layout_height="57dp"
+        android:background="#424242"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="1dp"
+        android:text="Games"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/descript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="338dp"
+        android:layout_marginBottom="1dp"
+        android:text="Player"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ID_tournament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="1dp"
+        android:text="Tournaments"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="258dp"
+        android:layout_marginBottom="1dp"
+        android:text="Teams"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="182dp"
+        android:layout_marginBottom="1dp"
+        android:text="Home"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="183dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_black" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cup_black" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/descript"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/rank_black" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/descript"
+        app:srcCompat="@drawable/team_black" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="39dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/console_black" />
+
+    <!-- nav bar ends -->
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Player"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="37dp" />
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/user_player"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stats"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="74dp" />
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/user_Stats"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My Games"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="75dp" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/user_mygames"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tournaments"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="75dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/user_tournaments"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Player Info"
-        tools:layout_editor_absoluteX="315dp"
-        tools:layout_editor_absoluteY="75dp" />
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/user_playerinfo"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Subscribed games -13"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="111dp" />
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/user_subsgame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mobile Legends"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="160dp" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="346dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="143dp"
-        android:layout_height="35dp"
-        android:text="Unsubscribe"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="192dp" />
+        <TextView
+            android:id="@+id/cod_mw_name"
+            android:layout_width="148dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/Valorant1"
+            android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="143dp"
-        android:layout_height="35dp"
-        android:text="Unsubscribe"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="295dp" />
+        <Button
+            android:id="@+id/edit_btn_t1"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/grey"
+            android:text="@string/user_Unsubscribe"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
 
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="143dp"
-        android:layout_height="35dp"
-        android:text="Unsubscribe"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="397dp" />
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="127dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-18dp"
+            app:srcCompat="@drawable/valo" />
 
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Valorant"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="261dp" />
+    </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tom Clansys's R6"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="361dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
