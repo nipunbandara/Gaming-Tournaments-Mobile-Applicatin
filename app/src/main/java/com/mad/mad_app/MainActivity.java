@@ -38,14 +38,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void user_home_user(View view){
 
-        Intent intent = new Intent(this, player_playerinfo.class);
+        Intent intent = new Intent(this, player_stats.class);
         startActivity(intent);
 
     }
 
     public void home_user(View view){
 
-        Intent intent = new Intent(this, player_playerinfo.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
 
     }

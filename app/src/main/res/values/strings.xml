@@ -132,4 +132,7 @@
     <string name="login">Login</string>
     <string name="signup">SignUp</string>
     <string name="next">Next</string>
+    <string name="top_10">Top 10</string>
+    <string name="ongoing">Ongoin</string>
+    <string name="upcomming">Upcomming</string>
 </resources>
