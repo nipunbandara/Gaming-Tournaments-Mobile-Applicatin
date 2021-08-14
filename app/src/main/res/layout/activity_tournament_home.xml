@@ -254,6 +254,6 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/KillConfirmed" />
+        app:srcCompat="@drawable/killconfirmed" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
