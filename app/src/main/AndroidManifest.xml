@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MAD_app">
         <activity
+            android:name=".game_home"
+            android:exported="true" />
+        <activity
             android:name=".signup_player"
             android:exported="true" />
         <activity

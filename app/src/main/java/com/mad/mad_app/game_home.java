@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class activity_game_home extends AppCompatActivity {
+public class game_home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
