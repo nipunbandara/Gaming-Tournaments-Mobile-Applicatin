@@ -5,16 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTintMode="src_in"
-    tools:context=".tournament_create">
+    tools:context=".tournament_update">
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/game_name_cod_mw"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cr_tournamet_topic6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/tournament_31"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Btn_create"
         android:layout_width="103dp"
         android:layout_height="44dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="80dp"
         android:backgroundTint="@color/grey"
-        android:text="@string/create"
+        android:text="@string/btn_update"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -23,8 +46,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="96dp"
-        android:text="@string/tournament_name1"
+        android:layout_marginTop="120dp"
+        android:text="@string/tournament_name"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
@@ -34,19 +57,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="200dp"
         android:text="@string/tournament_type_1"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
-        android:layout_marginTop="176dp"
-        android:text="@string/max_teams_1"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
@@ -56,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="284dp"
         android:text="@string/select_date_and_time"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +79,7 @@
         android:layout_width="183dp"
         android:layout_height="25dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginTop="376dp"
         android:text="@string/tournament_background_image"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,28 +92,17 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:fontFamily="sans-serif"
-        android:text="@string/tournament_create"
+        android:text="@string/tournament_edit_tournament"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/t_round"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/select_game"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="213dp"
         android:layout_height="35dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/tournament_name"
         android:inputType="textPersonName"
@@ -114,7 +115,7 @@
         android:layout_width="125dp"
         android:layout_height="35dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:hint="@string/tournament_type"
         android:inputType="textPersonName"
@@ -139,8 +140,8 @@
         android:id="@+id/editTextTime"
         android:layout_width="88dp"
         android:layout_height="35dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginBottom="320dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="300dp"
         android:ems="10"
         android:hint="@string/tournament_time"
         android:inputType="time"
@@ -153,9 +154,9 @@
         android:layout_width="94dp"
         android:layout_height="36dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="@color/light_grey"
-        android:text="@string/browse"
+        android:text="@string/btn_browse"
         android:textSize="12sp"
         app:iconTint="#424242"
         app:layout_constraintStart_toStartOf="parent"
@@ -166,35 +167,36 @@
         android:layout_width="103dp"
         android:layout_height="44dp"
         android:layout_marginStart="260dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="80dp"
         android:backgroundTint="@color/white"
         android:text="@string/cancel"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="149dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t_round" />
-
-    <EditText
-        android:id="@+id/editTextNumberDecimal"
-        android:layout_width="88dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="44dp"
-        android:ems="10"
-        android:hint="@string/max_teams"
-        android:inputType="numberDecimal"
-        android:textSize="12sp"
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIconTint="@color/black"
+        app:tabIndicatorColor="@color/black"
+        app:tabRippleColor="@color/black"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/light_grey_2">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tournament_edit" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tournament_participants" />
+
+    </com.google.android.material.tabs.TabLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
