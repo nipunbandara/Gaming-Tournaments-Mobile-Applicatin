@@ -27,7 +27,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginBottom="1dp"
         android:text="Games"
-        android:textColor="#000000"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -71,7 +71,7 @@
         android:layout_marginStart="182dp"
         android:layout_marginBottom="1dp"
         android:text="Home"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -83,7 +83,7 @@
         android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/homewhite" />
+        app:srcCompat="@drawable/home_black" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -123,7 +123,7 @@
         android:layout_marginBottom="2dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/console_black" />
+        app:srcCompat="@drawable/console_white" />
 
     <!-- nav bar ends -->
     <TextView

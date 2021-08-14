@@ -117,7 +117,7 @@
         android:layout_marginStart="338dp"
         android:layout_marginBottom="1dp"
         android:text="Player"
-        android:textColor="#000000"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -150,7 +150,7 @@
         android:layout_marginStart="182dp"
         android:layout_marginBottom="1dp"
         android:text="Home"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -162,7 +162,7 @@
         android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/homewhite" />
+        app:srcCompat="@drawable/home_black" />
 
     <ImageView
         android:id="@+id/imageView4"
