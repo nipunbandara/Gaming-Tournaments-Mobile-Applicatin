@@ -24,21 +24,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void team_home_user(View view){
 
-        Intent intent = new Intent(this, team_create.class);
+        Intent intent = new Intent(this, team_home.class);
         startActivity(intent);
 
     }
 
     public void game_home_user(View view){
 
-        Intent intent = new Intent(this, team_create.class);
+        Intent intent = new Intent(this, game_user_gamelist.class);
         startActivity(intent);
 
     }
 
     public void user_create_user(View view){
 
-        Intent intent = new Intent(this, team_create.class);
+        Intent intent = new Intent(this, player_playerinfo.class);
         startActivity(intent);
 
     }

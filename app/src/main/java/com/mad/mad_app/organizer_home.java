@@ -16,19 +16,26 @@ public class organizer_home extends AppCompatActivity {
 
     public void game_create_org(View view){
 
-        Intent intent = new Intent(this, team_create.class);
+        Intent intent = new Intent(this, game_org_gamelist.class);
         startActivity(intent);
     }
 
     public void tournament_create_org(View view){
 
-        Intent intent = new Intent(this, team_create.class);
+        Intent intent = new Intent(this, tournament_org_list.class);
         startActivity(intent);
     }
 
     public void organizer_create_org(View view){
 
-        Intent intent = new Intent(this, team_create.class);
+        Intent intent = new Intent(this, organizer_organizer_info.class);
         startActivity(intent);
+    }
+
+    public void home_org(View view){
+
+        Intent intent = new Intent(this, organizer_home.class);
+        startActivity(intent);
+
     }
 }
