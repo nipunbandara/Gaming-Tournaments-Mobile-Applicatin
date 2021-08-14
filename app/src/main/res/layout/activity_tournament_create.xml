@@ -8,34 +8,34 @@
     tools:context=".tournament_create">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Btn_create"
         android:layout_width="103dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="96dp"
         android:backgroundTint="@color/grey"
-        android:text="CREATE"
+        android:text="@string/create"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/t_bracket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="96dp"
-        android:text="Tournament Name :"
+        android:text="@string/tournament_name1"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/t_teamA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="176dp"
-        android:text="Tournament Type :"
+        android:text="@string/tournament_type_1"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="252dp"
         android:layout_marginTop="176dp"
-        android:text="Max Teams : "
+        android:text="@string/max_teams_1"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="264dp"
-        android:text="Select Date and Time :"
+        android:text="@string/select_date_and_time"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
@@ -68,7 +68,7 @@
         android:layout_height="25dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="372dp"
-        android:text="Tournament Background  Image : "
+        android:text="@string/tournament_background_image"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
@@ -80,18 +80,18 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:fontFamily="sans-serif"
-        android:text="Create Tournament"
+        android:text="@string/tournament_create"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/max_tm"
+        android:id="@+id/t_round"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="20dp"
-        android:text="Select Game :"
+        android:text="@string/select_game"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
@@ -107,7 +107,7 @@
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/t_bracket" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -120,7 +120,7 @@
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/t_bracket" />
 
     <EditText
         android:id="@+id/editTextDate"
@@ -150,25 +150,25 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="94dp"
-        android:layout_height="36dp"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/light_grey"
-        android:text="Browse"
+        android:text="@string/browse"
         android:textSize="12sp"
         app:iconTint="#424242"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/Btn_cancel"
         android:layout_width="103dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:layout_marginStart="260dp"
         android:layout_marginTop="96dp"
         android:backgroundTint="@color/white"
-        android:text="Cancel"
+        android:text="@string/cancel"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -182,7 +182,7 @@
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/max_tm" />
+        app:layout_constraintTop_toBottomOf="@+id/t_round" />
 
     <EditText
         android:id="@+id/editTextNumberDecimal"

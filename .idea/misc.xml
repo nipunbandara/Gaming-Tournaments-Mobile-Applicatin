@@ -3,14 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_create.xml" value="0.264" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_display_user.xml" value="0.264" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_home.xml" value="0.264" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_org_gamelist.xml" value="0.264" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_update.xml" value="0.2" />
+        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_match_org_list.xml" value="0.1763157894736842" />
+        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_organizer_home.xml" value="0.22" />
+        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_team_create.xml" value="0.1763157894736842" />
+        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_create.xml" value="0.33" />
+        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_home.xml" value="0.18" />
+        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_org_list.xml" value="0.25" />
+        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_update.xml" value="0.1763157894736842" />
+        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_user_selected_t.xml" value="0.1763157894736842" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_create.xml" value="0.4" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_display_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_user_gamelist.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_match_create.xml" value="0.19956140350877194" />
       </map>
     </option>
   </component>

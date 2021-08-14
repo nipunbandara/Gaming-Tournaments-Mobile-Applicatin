@@ -150,130 +150,130 @@
     app:layout_constraintHorizontal_bias="0.488"
     app:layout_constraintStart_toStartOf="parent" />
 
-<TextView
-    android:id="@+id/textView15"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="16dp"
-    android:layout_marginTop="8dp"
-    android:text="COD : MW"
-    android:textSize="10sp"
-    android:textStyle="bold"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/game_name_cod_mw"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
 
-<TextView
-    android:id="@+id/textView22"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="28dp"
-    android:layout_marginTop="172dp"
-    android:text="Joined Teams :"
-    android:textSize="12sp"
-    android:textStyle="bold"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="172dp"
+        android:text="@string/joined_teams"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
 
-<TextView
-    android:id="@+id/textView17"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="56dp"
-    android:layout_marginTop="60dp"
-    android:text="Organizer : Niimoh"
-    android:textSize="12sp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/organizer_niimoh"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
 
-<TextView
-    android:id="@+id/textView23"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="72dp"
-    android:layout_marginTop="240dp"
-    android:text="Leader User Name"
-    android:textSize="12sp"
-    app:layout_constraintStart_toEndOf="@+id/textView24"
-    app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="240dp"
+        android:text="@string/leader_user_name"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
 
-<TextView
-    android:id="@+id/textView24"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="80dp"
-    android:layout_marginTop="240dp"
-    android:text="Team Name"
-    android:textSize="12sp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="240dp"
+        android:text="@string/team_name"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
 
-<TextView
-    android:id="@+id/textView19"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="64dp"
-    android:layout_marginTop="60dp"
-    android:text="Starts in : 05:11:04"
-    android:textSize="12sp"
-    app:layout_constraintStart_toEndOf="@+id/textView17"
-    app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/starts_in"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
 
-<TextView
-    android:id="@+id/textView18"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="60dp"
-    android:layout_marginTop="100dp"
-    android:text="Num of Teams : 5"
-    android:textSize="12sp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/num_of_teams_5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
 
-<TextView
-    android:id="@+id/textView20"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="56dp"
-    android:layout_marginTop="132dp"
-    android:text="Min : 4"
-    android:textSize="12sp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/min_4"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
 
-<TextView
-    android:id="@+id/textView21"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="124dp"
-    android:layout_marginTop="132dp"
-    android:text="Max : 16"
-    android:textSize="12sp"
-    app:layout_constraintStart_toEndOf="@+id/textView20"
-    app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/max_16"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
 
-<TextView
-    android:id="@+id/cr_tournamet_topic5"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="16dp"
-    android:layout_marginTop="24dp"
-    android:fontFamily="sans-serif"
-    android:text="Kill Confirmed 10V10 #31"
-    android:textStyle="bold"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic4" />
+    <TextView
+        android:id="@+id/cr_tournamet_topic5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/tournament_31"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic4" />
 
-<TextView
-    android:id="@+id/cr_tournamet_topic4"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="36dp"
-    android:layout_marginTop="28dp"
-    android:fontFamily="sans-serif"
-    android:text="Tournament"
-    android:textStyle="bold"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/cr_tournamet_topic4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/tournament"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 <ListView
     android:layout_width="320dp"

@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Match_create extends AppCompatActivity {
+public class match_org_create extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

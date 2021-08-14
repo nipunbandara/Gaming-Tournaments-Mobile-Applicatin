@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="72dp"
-        android:text="COD : MW"
+        android:text="@string/game_name_cod_mw"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,13 +25,13 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="48dp"
         android:fontFamily="sans-serif"
-        android:text="Kill Confirmed 10V10 #31"
+        android:text="@string/tournament_31"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Btn_create"
         android:layout_width="103dp"
         android:layout_height="44dp"
         android:layout_marginStart="52dp"
@@ -42,23 +42,23 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/t_bracket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="120dp"
-        android:text="Tournament Name :"
+        android:text="@string/tournament_name"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/t_teamA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="200dp"
-        android:text="Tournament Type :"
+        android:text="@string/tournament_type_1"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
@@ -69,7 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="284dp"
-        android:text="Select Date and Time :"
+        android:text="@string/select_date_and_time"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
@@ -80,7 +80,7 @@
         android:layout_height="25dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="376dp"
-        android:text="Tournament Background  Image : "
+        android:text="@string/tournament_background_image"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
@@ -108,7 +108,7 @@
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/t_bracket" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -121,7 +121,7 @@
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/t_bracket" />
 
     <EditText
         android:id="@+id/editTextDate"
@@ -163,13 +163,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/Btn_cancel"
         android:layout_width="103dp"
         android:layout_height="44dp"
         android:layout_marginStart="260dp"
         android:layout_marginTop="80dp"
         android:backgroundTint="@color/white"
-        android:text="Cancel"
+        android:text="@string/cancel"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />

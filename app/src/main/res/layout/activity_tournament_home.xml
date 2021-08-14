@@ -130,33 +130,32 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="280dp"
-        android:text="COD : MW"
+        android:text="@string/game_name_cod_mw"
         android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic4" />
 
     <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="248dp"
-        android:layout_marginTop="68dp"
-        android:text="Organized by :"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
-
-    <TextView
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="264dp"
-        android:layout_marginTop="8dp"
-        android:text="Niimoh"
+        android:text="@string/niimoh"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        tools:layout_editor_absoluteY="470dp" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/organized_by"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
 
     <TextView
         android:id="@+id/textView25"
@@ -164,7 +163,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginTop="68dp"
-        android:text="Accepted Teams :"
+        android:text="@string/accepted_teams"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
@@ -175,7 +174,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginTop="8dp"
-        android:text="5"
+        android:text="@string/ac_teams"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
@@ -186,7 +185,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginTop="116dp"
-        android:text="Starts in : 05:11:04"
+        android:text="@string/starts_in"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic5" />
@@ -199,7 +198,7 @@
         android:layout_marginTop="312dp"
         android:fontFamily="sans-serif"
         android:onClick="tournament_user_sel"
-        android:text="Kill Confirmed 10V10 #31"
+        android:text="@string/tournament_31"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic4" />
@@ -211,12 +210,13 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="28dp"
         android:fontFamily="sans-serif"
-        android:text="Tournament"
+        android:text="@string/tournament"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="361dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
@@ -245,5 +245,15 @@
             android:layout_height="wrap_content"
             android:text="All" />
     </com.google.android.material.tabs.TabLayout>
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="291dp"
+        android:layout_height="439dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/killconfirmed" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
