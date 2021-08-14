@@ -182,7 +182,7 @@
         android:layout_marginBottom="23dp"
         app:layout_constraintBottom_toBottomOf="@+id/descript"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/rank_black" />
+        app:srcCompat="@drawable/rankwhite" />
 
     <ImageView
         android:id="@+id/imageView6"
