@@ -57,4 +57,6 @@
 
     <!-- Team -->
     <string name="team_name">Team Name</string>
+    <string name="Tmatchdetails">Match Details</string>
+    <string name="match_winner">Winner :</string>
 </resources>

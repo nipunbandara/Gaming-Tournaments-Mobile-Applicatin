@@ -131,6 +131,7 @@
     android:layout_marginStart="28dp"
     android:layout_marginTop="220dp"
     android:backgroundTint="@color/light_grey_2"
+    android:onClick="match_player_list"
     android:text="Brackets"
     android:textSize="12sp"
     app:iconTint="#424242"

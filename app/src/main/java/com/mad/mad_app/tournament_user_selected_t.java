@@ -21,4 +21,11 @@ public class tournament_user_selected_t extends AppCompatActivity {
 
     }
 
+    public void match_player_list(View view){
+
+        Intent intent = new Intent(this, match_player_list.class);
+        startActivity(intent);
+
+    }
+
 }
