@@ -58,8 +58,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="346dp"
         android:layout_height="129dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="252dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="336dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -108,13 +108,21 @@
             app:layout_constraintStart_toEndOf="@+id/edit_btn_t1"
             app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
 
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="127dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-18dp"
+            app:srcCompat="@drawable/KillConfirmed" />
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="346dp"
         android:layout_height="129dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="168dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -134,7 +142,7 @@
             android:layout_marginStart="150dp"
             android:layout_marginTop="20dp"
             android:fontFamily="sans-serif"
-            android:text="@string/tournament_32"
+            android:text="@string/tournament_name_32"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -162,6 +170,14 @@
             android:textSize="10sp"
             app:layout_constraintStart_toEndOf="@+id/edit_btn_t1"
             app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="126dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="18dp"
+            app:srcCompat="@drawable/team_deathmatch" />
 
     </androidx.cardview.widget.CardView>
 
