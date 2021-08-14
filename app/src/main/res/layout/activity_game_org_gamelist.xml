@@ -4,109 +4,136 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".addedgames">
+    tools:context=".game_org_gamelist">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/ID_tournament"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Games"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="45dp" />
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/org_games"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Added games"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="106dp" />
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="43dp"
+        android:text="@string/add_games"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ID_tournament" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add a new game"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="64dp" />
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/add_a_game"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="COD MV"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="155dp" />
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="58dp"
+        android:text="@string/cod_mv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mobile Legends"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="252dp" />
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/mobile_legends"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_btn_t1" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valorant"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="342dp" />
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/valorant_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_btn_t1" />
 
     <Button
         android:id="@+id/edit_btn_t1"
         android:layout_width="92dp"
         android:layout_height="36dp"
-        android:text="Edit"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="195dp" />
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/org_Edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
         android:id="@+id/delete_btn_t1"
         android:layout_width="92dp"
         android:layout_height="36dp"
-        android:text="Edit"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="286dp" />
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/org_Edit1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="92dp"
         android:layout_height="36dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="10dp"
         android:text="Edit"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="371dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="92dp"
         android:layout_height="36dp"
-        android:text="Delete"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="195dp" />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="112dp"
+        android:text="@string/org_Delete"
+        app:layout_constraintStart_toEndOf="@+id/edit_btn_t1"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="92dp"
         android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="55dp"
         android:text="Delete"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="286dp" />
+        app:layout_constraintStart_toEndOf="@+id/delete_btn_t1"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="92dp"
         android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="49dp"
         android:text="Delete"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="371dp" />
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="51dp"
         android:layout_height="43dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="54dp"
         android:src="@android:drawable/ic_menu_add"
-        tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="54dp" />
+        app:layout_constraintStart_toEndOf="@+id/ID_tournament"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

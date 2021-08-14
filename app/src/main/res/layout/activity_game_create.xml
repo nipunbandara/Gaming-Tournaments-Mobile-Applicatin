@@ -27,7 +27,7 @@
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="12dp"
         android:ems="10"
-        android:hint="Name"
+        android:hint="@string/create_name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
         android:layout_marginBottom="4dp"
-        android:text="Enter the region"
+        android:text="@string/create_region"
         app:layout_constraintBottom_toTopOf="@+id/key_region"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -75,7 +75,7 @@
         android:layout_marginStart="66dp"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="12dp"
-        android:text="Description"
+        android:text="@string/create_des"
         app:layout_constraintBottom_toTopOf="@+id/descript_key"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/key_region" />
@@ -101,7 +101,7 @@
         android:layout_marginStart="66dp"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="12dp"
-        android:text="Min Teams"
+        android:text="@string/create_min_teams"
         app:layout_constraintBottom_toTopOf="@+id/min_tm_key"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descript_key" />
@@ -126,7 +126,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="66dp"
         android:layout_marginBottom="12dp"
-        android:text="Max Teams"
+        android:text="@string/create_maxteams"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -137,7 +137,7 @@
         android:layout_marginStart="66dp"
         android:layout_marginEnd="215dp"
         android:layout_marginBottom="12dp"
-        android:text="Upload the image"
+        android:text="@string/create_image"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -150,7 +150,7 @@
         android:layout_marginBottom="76dp"
         app:layout_constraintBottom_toTopOf="@+id/toolbar2"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="Add image" />
+        tools:text="@string/create_Addimage" />
 
     <TextView
         android:id="@+id/create_heading"
@@ -159,7 +159,7 @@
         android:layout_marginStart="66dp"
         android:layout_marginTop="31dp"
         android:layout_marginEnd="286dp"
-        android:text="Create"
+        android:text="@string/create_heading"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -170,7 +170,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
         android:layout_marginBottom="12dp"
-        android:text="Enter the name"
+        android:text="@string/enter_name"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -180,7 +180,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
         android:layout_marginBottom="16dp"
-        android:text="Submit"
+        android:text="@string/create_Submit"
         app:layout_constraintBottom_toTopOf="@+id/toolbar2"
         app:layout_constraintStart_toStartOf="parent" />
 
