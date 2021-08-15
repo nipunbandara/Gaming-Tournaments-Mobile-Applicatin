@@ -117,6 +117,7 @@
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -129,6 +130,7 @@
         android:ems="10"
         android:hint="@string/key_region"
         android:inputType="textPersonName"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -139,6 +141,7 @@
         android:layout_marginStart="68dp"
         android:layout_marginTop="13dp"
         android:text="Enter the region"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
 
@@ -151,6 +154,7 @@
         android:ems="10"
         android:hint="Description"
         android:inputType="textPersonName"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descript" />
 
@@ -161,6 +165,7 @@
         android:layout_marginStart="66dp"
         android:layout_marginTop="12dp"
         android:text="@string/update_des"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/key_region" />
 
@@ -173,6 +178,7 @@
         android:ems="10"
         android:hint="Min Teams"
         android:inputType="textPersonName"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/min_key" />
 
@@ -183,6 +189,7 @@
         android:layout_marginStart="66dp"
         android:layout_marginTop="13dp"
         android:text="@string/update_minteams"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descript_key" />
 
@@ -196,7 +203,8 @@
         android:hint="Max Teams"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/max_tm" />
+        app:layout_constraintTop_toBottomOf="@+id/max_tm"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/max_tm"
@@ -205,6 +213,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="13dp"
         android:text="@string/update_maxteams"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/min_tm_key" />
 
@@ -215,6 +224,7 @@
         android:layout_marginStart="68dp"
         android:layout_marginTop="15dp"
         android:text="@string/update_heading"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -225,6 +235,7 @@
         android:layout_marginStart="66dp"
         android:layout_marginTop="18dp"
         android:text="Enter the name"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/create_heading" />
 

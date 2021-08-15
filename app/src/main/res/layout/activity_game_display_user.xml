@@ -126,13 +126,15 @@
         app:srcCompat="@drawable/console_white" />
 
     <!-- nav bar ends -->
+
     <TextView
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="135dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="36dp"
         android:text="@string/game_heading"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -143,6 +145,7 @@
         android:layout_marginStart="42dp"
         android:layout_marginTop="8dp"
         android:text="@string/des_heading"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
