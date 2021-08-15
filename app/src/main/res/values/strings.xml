@@ -123,7 +123,7 @@
     <string name="Mobile_led">Mobile Legends</string>
     <string name="Valorant1">Valorant</string>
     <string name="edit">Edit</string>
-    <string name="delete">Delete</string>
+    <string name="delete">DELETE</string>
     <string name="register_now">Register Now</string>
     <string name="organization">Organization</string>
     <string name="player">Player</string>
@@ -138,4 +138,5 @@
     <string name="select_team">"Select the Team : "</string>
     <string name="join_now">Join Now</string>
     <string name="brackets">Brackets</string>
+    <string name="updatematch">Update Match</string>
 </resources>

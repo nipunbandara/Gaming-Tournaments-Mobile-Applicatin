@@ -12,6 +12,6 @@ public class match_org_update extends AppCompatActivity {
         setContentView(R.layout.activity_match_org_update);
 
 
-        this.setTitle("Create Update");
+        this.setTitle("Update Match");
     }
 }
