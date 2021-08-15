@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class activity_game_home extends AppCompatActivity {
+public class signup_player extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_home);
+        setContentView(R.layout.activity_signup_player);
+
+
+        this.setTitle("Signup - Player");
     }
 }

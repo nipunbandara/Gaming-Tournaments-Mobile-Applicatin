@@ -13,18 +13,42 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        this.setTitle("Home");
     }
 
-    public void tournament_home(View view){
+    public void tournament_home_user(View view){
 
         Intent intent = new Intent(this, tournament_home.class);
         startActivity(intent);
 
     }
 
-    public void team_create(View view){
+    public void team_home_user(View view){
 
-        Intent intent = new Intent(this, team_create.class);
+        Intent intent = new Intent(this, team_home.class);
+        startActivity(intent);
+
+    }
+
+    public void game_home_user(View view){
+
+        Intent intent = new Intent(this, game_home.class);
+        startActivity(intent);
+
+    }
+
+    public void user_home_user(View view){
+
+        Intent intent = new Intent(this, player_stats.class);
+        startActivity(intent);
+
+    }
+
+    public void home_user(View view){
+
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
 
     }

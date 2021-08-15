@@ -1,5 +1,9 @@
 <resources>
     <!-- Game -->
+
+    <string name="name_key">Name</string>
+    <string name="game_name">Name</string>
+    <string name="gamename_key">Name</string>
     <string name="key_region">Region</string>
     <string name="key_name">Name</string>
     <string name="key_description">Description</string>
@@ -20,6 +24,9 @@
     <string name="btn_browse">Browse</string>
     <string name="game_name_cod_mw">COD : MW</string>
     <string name="tournament_name_32">Team Death Match 5V5 #32</string>
+
+    <string name="Tmatchdetails">Match Details</string>
+    <string name="match_winner">Winner :</string>
 
     <string name="round1">Round 1</string>
     <string name="matches">Matches</string>
@@ -43,7 +50,7 @@
     <string name="starts_in">Starts in : 05:11:04</string>
     <string name="new_tournament">Add a new tournament</string>
     <string name="added_tournaments">Added Tournaments</string>
-    <string name="tournament_name1" >"Tournament Name : "</string>
+    <string name="tournament_name1">"Tournament Name : "</string>
     <string name="create">CREATE</string>
     <string name="cancel">CANCEL</string>
     <string name="browse">BROWSE</string>
@@ -57,4 +64,75 @@
 
     <!-- Team -->
     <string name="team_name">Team Name</string>
+    <string name="game_region">Region</string>
+    <string name="game_heading">Mobile Legends</string>
+    <string name="des_heading">Description</string>
+    <string name="des_para">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="overview_game">Overview</string>
+    <string name="game_game">Game</string>
+    <string name="max_team">Max Team</string>
+    <string name="players_no">Number of players</string>
+    <string name="game_ranking">Ranking</string>
+    <string name="total_sub">Toatal subscriptions</string>
+    <string name="create_heading">Create</string>
+    <string name="enter_name">Enter the name</string>
+    <string name="create_name">Name</string>
+    <string name="create_region">Enter the region</string>
+    <string name="create_des">Description</string>
+    <string name="create_minteams" />
+    <string name="create_min_teams">Min Teams</string>
+    <string name="create_maxteams">Max Teams</string>
+    <string name="create_image">Upload the image</string>
+    <string name="org_game">Game</string>
+    <string name="org_games">Games</string>
+    <string name="add_games">Added games</string>
+    <string name="add_a_game">Add a new game</string>
+    <string name="cod_mv">COD MV</string>
+    <string name="mobile_legends">Mobile Legends</string>
+    <string name="valorant_name">Valorant</string>
+    <string name="update_heading">Update</string>
+    <string name="enter_gname">Enter the name of the game</string>
+    <string name="enter_regiion">Enter the region</string>
+    <string name="update_des">Description</string>
+    <string name="update_minteams">Min Teams</string>
+    <string name="update_maxteams">Max Teams</string>
+    <string name="user_player">Player</string>
+    <string name="user_Stats">Stats</string>
+    <string name="user_subsgame">Subscribed games -13</string>
+    <string name="user_Mobile_legends">Mobile Legends</string>
+    <string name="user_Valorant">Valorant</string>
+    <string name="user_TomCl">Tom Clansys\'s R6</string>
+    <string name="user_playerinfo">Player Info</string>
+    <string name="user_tournaments">Tournaments</string>
+    <string name="user_mygames">My Games</string>
+
+    <string name="user_Unsubscribe1">Unsubscribe</string>
+    <string name="user_Unsubscribe">Unsubscribe</string>
+    <string name="user_Cancle">Cancle</string>
+    <string name="user_Update">Update</string>
+    <string name="org_Edit">Edit</string>
+    <string name="org_Delete">Delete</string>
+    <string name="org_Edit1">Edit</string>
+    <string name="create_Addimage">Add image</string>
+    <string name="create_Submit">Submit</string>
+    <string name="sub_button">400</string>
+    <string name="reg_info">Asian</string>
+    <string name="min_num">4</string>
+    <string name="max_num">16</string>
+    <string name="cod1">Call Of Duty</string>
+    <string name="Mobile_led">Mobile Legends</string>
+    <string name="Valorant1">Valorant</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="register_now">Register Now</string>
+    <string name="organization">Organization</string>
+    <string name="player">Player</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="next">Next</string>
+    <string name="top_10">Top 10</string>
+    <string name="ongoing">Ongoin</string>
+    <string name="upcomming">Upcomming</string>
 </resources>

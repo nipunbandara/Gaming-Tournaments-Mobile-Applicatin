@@ -7,8 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".game_create">
 
+    <!-- nav bar -->
+
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
+        android:id="@+id/toolbar"
         android:layout_width="394dp"
         android:layout_height="57dp"
         android:background="#424242"
@@ -16,33 +18,123 @@
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/game"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="316dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/organizer"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/tournament"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/home"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_black" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cup_black" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="39dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/console_white" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="39dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/organizer_black" />
+
+    <!-- nav bar ends -->
+
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="227dp"
         android:layout_height="38dp"
         android:layout_marginStart="66dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="12dp"
         android:ems="10"
-        android:hint="Name"
+        android:hint="@string/create_name"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <EditText
         android:id="@+id/key_region"
         android:layout_width="229dp"
         android:layout_height="38dp"
-        android:layout_marginStart="66dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="@string/key_region"
         android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -50,138 +142,150 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginBottom="12dp"
-        android:text="Enter the region"
-        app:layout_constraintBottom_toTopOf="@+id/key_region"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="24dp"
+        android:text="@string/create_region"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/descript_key"
         android:layout_width="227dp"
         android:layout_height="38dp"
-        android:layout_marginStart="66dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Description"
         android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/descript" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/descript"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
-        android:text="Description"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        android:layout_marginTop="24dp"
+        android:text="@string/create_des"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/key_region" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/min_tm_key"
         android:layout_width="230dp"
         android:layout_height="39dp"
-        android:layout_marginStart="66dp"
-        android:layout_marginEnd="97dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Min Teams"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/t_round"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min_key" />
 
     <TextView
-        android:id="@+id/add_new_match"
+        android:id="@+id/min_key"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
-        android:text="Min Teams"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/create_min_teams"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/descript_key" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="236dp"
         android:layout_height="39dp"
-        android:layout_marginStart="66dp"
-        android:layout_marginEnd="91dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Max Teams"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/t_bracket"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/t_round"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginBottom="12dp"
-        android:text="Max Teams"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/t_bracket"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginEnd="215dp"
-        android:layout_marginBottom="12dp"
-        android:text="Upload the image"
-        app:layout_constraintBottom_toTopOf="@+id/Btn_create"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/Btn_create"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginBottom="201dp"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="Add image" />
+        app:layout_constraintTop_toBottomOf="@+id/max_tm" />
+
+    <TextView
+        android:id="@+id/max_tm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/create_maxteams"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min_tm_key" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/create_image"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
 
     <TextView
         android:id="@+id/create_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="286dp"
-        android:text="Create"
+        android:layout_marginTop="16dp"
+        android:text="@string/create_heading"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/t_teamA"
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginBottom="12dp"
-        android:text="Enter the name"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="28dp"
+        android:text="@string/enter_name"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_heading" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginBottom="94dp"
-        android:text="Submit"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:backgroundTint="@color/grey"
+        android:text="@string/create_Submit"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/grey"
+        android:text="@string/create_Addimage"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

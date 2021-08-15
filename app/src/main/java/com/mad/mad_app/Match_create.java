@@ -9,6 +9,9 @@ public class Match_create extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_match_create);
+        setContentView(R.layout.activity_match_org_create);
+
+
+        this.setTitle("Create Match");
     }
 }

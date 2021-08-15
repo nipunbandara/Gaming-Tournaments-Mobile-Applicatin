@@ -7,113 +7,132 @@
     tools:context=".player_stats"
     tools:layout_editor_absoluteY="81dp">
 
+
+    <!-- nav bar -->
+
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="412dp"
-        android:layout_height="60dp"
+        android:id="@+id/toolbar"
+        android:layout_width="394dp"
+        android:layout_height="57dp"
         android:background="#424242"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView28"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="1dp"
         android:text="Games"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView29"
+        android:id="@+id/descript"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="338dp"
+        android:layout_marginBottom="1dp"
         android:text="Player"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="338dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView30"
+        android:id="@+id/ID_tournament"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="1dp"
         android:text="Tournaments"
-        android:textColor="@color/white"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView28" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="258dp"
+        android:layout_marginBottom="1dp"
         android:text="Teams"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="258dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView32"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
+        android:layout_marginStart="182dp"
+        android:layout_marginBottom="1dp"
         android:text="Home"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
-        tools:layout_editor_absoluteX="184dp" />
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageView3"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="183dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="home_user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_black" />
+
+    <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="33dp"
         android:layout_height="27dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="5dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView12"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:srcCompat="@drawable/cupwhite" />
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="23dp"
+        android:onClick="tournament_home_user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cup_black" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="32dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:srcCompat="@drawable/team_black"
-        tools:layout_editor_absoluteX="258dp" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="39dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="3dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:srcCompat="@drawable/console_black" />
-
-    <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/imageView5"
         android:layout_width="30dp"
         android:layout_height="27dp"
-        android:layout_marginTop="3dp"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:srcCompat="@drawable/rank_black"
-        tools:layout_editor_absoluteX="338dp" />
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="23dp"
+        android:onClick="user_home_user"
+        app:layout_constraintBottom_toBottomOf="@+id/descript"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/rankwhite" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imageView6"
         android:layout_width="32dp"
         android:layout_height="27dp"
-        android:layout_marginTop="5dp"
-        android:onClick="Home"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:srcCompat="@drawable/home_black"
-        tools:layout_editor_absoluteX="189dp" />
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="22dp"
+        android:onClick="team_home_user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/descript"
+        app:srcCompat="@drawable/team_black" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="39dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="game_home_user"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/console_black" />
+
+    <!-- nav bar ends -->
 
     <TextView
         android:id="@+id/cr_player_topic6"
@@ -147,6 +166,7 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="my_games"
             android:text="My Games" />
 
         <com.google.android.material.tabs.TabItem
@@ -166,9 +186,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
+        android:layout_marginTop="60dp"
+        android:onClick="my_games"
         android:text="Kill Count :"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="169dp" />
+        app:layout_constraintTop_toBottomOf="@+id/player_tab" />
 
     <TextView
         android:id="@+id/textView34"
@@ -184,10 +206,11 @@
         android:id="@+id/player_kd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="8dp"
         android:text="K/D :"
-        app:layout_constraintTop_toBottomOf="@+id/player_name"
-        tools:layout_editor_absoluteX="50dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_name" />
 
     <TextView
         android:id="@+id/textView36"
@@ -203,19 +226,21 @@
         android:id="@+id/player_particpated_tournaments"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="16dp"
         android:text="# Particpated Tournaments :"
-        app:layout_constraintTop_toBottomOf="@+id/textView36"
-        tools:layout_editor_absoluteX="50dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
     <TextView
         android:id="@+id/player_total_matches"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="16dp"
         android:text="# Total Matches :"
-        app:layout_constraintTop_toBottomOf="@+id/player_particpated_tournaments"
-        tools:layout_editor_absoluteX="50dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_particpated_tournaments" />
 
     <TextView
         android:id="@+id/player_wins"

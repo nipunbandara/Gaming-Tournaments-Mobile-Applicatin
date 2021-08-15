@@ -13,6 +13,9 @@ public class team_create extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team_create);
         Intent intent = getIntent();
+
+
+        this.setTitle("Create Team");
     }
     public void tournament_home(View view){
 
