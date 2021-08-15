@@ -173,7 +173,9 @@
             android:layout_height="83dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            tools:srcCompat="@drawable/team3" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:srcCompat="@drawable/team3" />
 
         <TextView
             android:id="@+id/match2_team2_name"
@@ -189,7 +191,9 @@
             android:layout_height="83dp"
             android:layout_marginStart="250dp"
             android:layout_marginTop="10dp"
-            tools:srcCompat="@drawable/team4" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:srcCompat="@drawable/team4" />
 
         <TextView
             android:id="@+id/match2_team1_name"
