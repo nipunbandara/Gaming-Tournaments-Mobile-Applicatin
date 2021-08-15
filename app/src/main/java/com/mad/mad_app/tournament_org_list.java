@@ -30,4 +30,11 @@ public class tournament_org_list extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void tournament_info(View view){
+
+        Intent intent = new Intent(this, tournament_org_tournament_info.class);
+        startActivity(intent);
+
+    }
 }
