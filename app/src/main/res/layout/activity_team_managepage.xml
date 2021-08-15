@@ -7,49 +7,79 @@
     android:backgroundTintMode="src_in"
     tools:context=".team_create">
 
-    <Button
-        android:id="@+id/save23"
-        android:layout_width="103dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="240dp"
-        android:layout_marginTop="108dp"
-        android:backgroundTint="@color/grey"
-        android:text="DELETE"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="342dp"
+        android:layout_height="513dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic">
 
-    <Button
-        android:id="@+id/save"
-        android:layout_width="103dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="109dp"
-        android:backgroundTint="@color/grey"
-        android:text="EDIT"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        <EditText
+            android:id="@+id/editTextTextPersonName9"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="325dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="PlayerID"
+            android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/textView978"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="96dp"
-        android:text="Team Description:"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="CodeNameAlpha"
+            android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/textView10773"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="265dp"
-        android:text="Team Logo:"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="50dp"
+            android:text="Team Description" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="176dp"
+            android:layout_height="289dp"
+            android:layout_marginHorizontal="75dp"
+            android:layout_marginVertical="40dp"
+            app:srcCompat="@drawable/codenamealpha" />
+
+        <Button
+            android:id="@+id/save2"
+            android:layout_width="103dp"
+            android:layout_height="44dp"
+            android:layout_marginVertical="325dp"
+            android:layout_marginStart="200dp"
+            android:backgroundTint="@color/light_grey_2"
+            android:text="Invite"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/save23"
+            android:layout_width="103dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="400dp"
+            android:backgroundTint="@color/grey"
+            android:text="DELETE" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="103dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="400dp"
+            android:backgroundTint="@color/grey"
+            android:text="EDIT" />
+
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/cr_tournamet_topic"
@@ -58,60 +88,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:fontFamily="sans-serif"
-        android:text="Create Team"
+        android:text="Manage Teams"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="20dp"
-        android:text="Team name:"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="213dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:hint="@string/team_name"
-        android:inputType="textPersonName"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName6"
-        android:layout_width="214dp"
-        android:layout_height="113dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="19dp"
-        android:ems="10"
-        android:hint="@string/team_name"
-        android:inputType="textPersonName"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView978" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="94dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="23dp"
-        android:backgroundTint="@color/light_grey"
-        android:text="Browse"
-        android:textSize="12sp"
-        app:iconTint="#424242"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10773" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
