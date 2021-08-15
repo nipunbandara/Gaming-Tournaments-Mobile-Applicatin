@@ -12,6 +12,8 @@ public class game_display_user extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_display_user);
+
+        this.setTitle("Games");
     }
 
     public void tournament_home_user(View view){

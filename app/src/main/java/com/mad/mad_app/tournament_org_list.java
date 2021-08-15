@@ -12,6 +12,9 @@ public class tournament_org_list extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tournament_org_list);
+
+
+        this.setTitle("Tournaments");
     }
 
     public void add_tournament(View view){

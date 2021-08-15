@@ -12,6 +12,9 @@ public class game_user_gamelist extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_user_gamelist );
+
+
+        this.setTitle("Player");
     }
 
     public void tournament_home_user(View view){

@@ -12,6 +12,9 @@ public class login_player extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_player);
+
+
+        this.setTitle("Login Player");
     }
 
     public void user_home(View view){

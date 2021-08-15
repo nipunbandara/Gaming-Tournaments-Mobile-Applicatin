@@ -13,6 +13,9 @@ public class game_create extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_create);
         Intent intent = getIntent();
+
+
+        this.setTitle("Create Game");
     }
     public void game_create_org(View view){
 

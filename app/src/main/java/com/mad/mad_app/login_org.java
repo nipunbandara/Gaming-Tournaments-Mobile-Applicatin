@@ -12,6 +12,9 @@ public class login_org extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_org);
+
+
+        this.setTitle("Login - Organization");
     }
 
     public void organizer_home(View view){

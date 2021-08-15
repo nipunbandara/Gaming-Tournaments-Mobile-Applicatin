@@ -12,6 +12,8 @@ public class login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        this.setTitle("Account Type");
     }
 
     public void login_player(View view){

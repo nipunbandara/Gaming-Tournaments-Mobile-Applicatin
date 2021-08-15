@@ -12,6 +12,9 @@ public class match_org_list extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_match_org_list);
+
+
+        this.setTitle("Create Match");
     }
 
     public void match_org_create(View view){

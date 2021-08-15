@@ -14,6 +14,9 @@ public class game_org_gamelist extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_org_gamelist);
+
+
+        this.setTitle("Games");
     }
     public void create_new_game(View view){
 
