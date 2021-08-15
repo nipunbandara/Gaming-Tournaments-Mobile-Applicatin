@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
     tools:context=".match_org_list">
 
     <androidx.appcompat.widget.Toolbar
@@ -29,15 +30,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="39dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/console_black"
-        tools:layout_editor_absoluteY="648dp" />
-
     <TextView
         android:id="@+id/textView44"
         android:layout_width="wrap_content"
@@ -48,14 +40,6 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="30dp"
-        android:layout_height="27dp"
-        app:srcCompat="@drawable/rank_black"
-        tools:layout_editor_absoluteX="344dp"
-        tools:layout_editor_absoluteY="648dp" />
 
     <TextView
         android:id="@+id/textView45"
@@ -91,14 +75,6 @@
         app:srcCompat="@drawable/home_black" />
 
     <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="32dp"
-        android:layout_height="27dp"
-        app:srcCompat="@drawable/team_black"
-        tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="649dp" />
-
-    <ImageView
         android:id="@+id/imageView18"
         android:layout_width="33dp"
         android:layout_height="27dp"
@@ -119,61 +95,62 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+
     <TextView
         android:id="@+id/match_org_list_h_round1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="121dp"
+        android:layout_marginStart="32dp"
         android:hint="@string/round1"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/match_org_list_h_matches" />
+        app:layout_constraintTop_toBottomOf="@+id/add_new_match" />
 
 
     <TextView
         android:id="@+id/match_org_list_h_matches"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="sans-serif"
         android:hint="@string/matches"
+        android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
         android:layout_marginEnd="44dp"
         android:clickable="true"
         android:onClick="match_org_create"
         app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match_org_list_h_matches"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
     <TextView
         android:id="@+id/add_new_match"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="264dp"
         android:layout_marginTop="16dp"
-        android:text="Add a new Match"
         android:onClick="match_org_create"
-        android:textSize="12sp"
+        android:text="Add a new Match"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/floatingActionButton" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="346dp"
         android:layout_height="129dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="224dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="260dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -204,7 +181,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="100dp"
-            android:text="Legends" />
+            android:text="Riders" />
 
         <ImageView
             android:id="@+id/match3_team2_img"
@@ -220,23 +197,25 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="270dp"
             android:layout_marginTop="100dp"
-            android:text="Blazing" />
+            android:text="Swordy" />
 
         <TextView
             android:id="@+id/match2_team1_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
-            android:layout_marginTop="55dp"
-            android:text="8" />
+            android:layout_marginTop="45dp"
+            android:text="6"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/match2_team2_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="230dp"
-            android:layout_marginTop="55dp"
-            android:text="8" />
+            android:layout_marginTop="45dp"
+            android:text="8"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView41"
@@ -251,8 +230,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="346dp"
         android:layout_height="129dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="364dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="412dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -306,16 +285,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
-            android:layout_marginTop="55dp"
-            android:text="8" />
+            android:layout_marginTop="45dp"
+            android:text="7"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/match2_team2_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="230dp"
-            android:layout_marginTop="55dp"
-            android:text="8" />
+            android:layout_marginTop="45dp"
+            android:text="8"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView41"
@@ -330,8 +311,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="346dp"
         android:layout_height="129dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -362,7 +343,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="100dp"
-            android:text="Legends" />
+            android:text="Platlets" />
 
         <ImageView
             android:id="@+id/match3_team2_img"
@@ -378,23 +359,25 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="270dp"
             android:layout_marginTop="100dp"
-            android:text="Blazing" />
+            android:text="Doggies" />
 
         <TextView
             android:id="@+id/match2_team1_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
-            android:layout_marginTop="55dp"
-            android:text="8" />
+            android:layout_marginTop="45dp"
+            android:text="5"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/match2_team2_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="230dp"
-            android:layout_marginTop="55dp"
-            android:text="8" />
+            android:layout_marginTop="45dp"
+            android:text="8"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView41"
