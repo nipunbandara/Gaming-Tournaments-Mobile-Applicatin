@@ -10,5 +10,8 @@ public class organizer_organizer_info extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_organizer_organizer_info);
+
+
+        this.setTitle("Organizer");
     }
 }

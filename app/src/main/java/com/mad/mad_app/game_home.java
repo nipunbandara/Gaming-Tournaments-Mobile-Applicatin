@@ -12,6 +12,9 @@ public class game_home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_home);
+
+
+        this.setTitle("Games");
     }
     public void view_ml_game(View view){
 

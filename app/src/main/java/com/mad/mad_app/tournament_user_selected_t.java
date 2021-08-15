@@ -13,6 +13,9 @@ public class tournament_user_selected_t extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tournament_user_selected_t);
         Intent intent = getIntent();
+
+
+        this.setTitle("Kill Confirmed 10 V 10 #3");
     }
     public void home(View view){
 

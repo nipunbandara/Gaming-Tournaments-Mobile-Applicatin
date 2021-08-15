@@ -12,6 +12,9 @@ public class game_update extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_update);
+
+
+        this.setTitle("Update Game");
     }
     public void game_create_org(View view){
 

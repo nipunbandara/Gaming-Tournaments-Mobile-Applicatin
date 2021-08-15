@@ -10,5 +10,8 @@ public class match_org_update extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_match_org_update);
+
+
+        this.setTitle("Create Update");
     }
 }

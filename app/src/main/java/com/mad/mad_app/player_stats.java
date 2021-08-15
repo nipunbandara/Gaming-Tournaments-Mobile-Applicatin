@@ -12,6 +12,9 @@ public class player_stats extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player_stats);
+
+
+        this.setTitle("Player Stat");
     }
 
     public void my_games(View view){

@@ -13,6 +13,9 @@ public class tournament_home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tournament_home);
         Intent intent = getIntent();
+
+
+        this.setTitle("Tournaments");
     }
 
     public void tournament_user_sel(View view){

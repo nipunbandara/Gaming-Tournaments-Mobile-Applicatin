@@ -12,6 +12,9 @@ public class organizer_home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_organizer_home);
+
+
+        this.setTitle("Home");
     }
 
     public void game_home_org(View view){
