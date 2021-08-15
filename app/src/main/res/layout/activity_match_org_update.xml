@@ -269,7 +269,7 @@
         android:id="@+id/Btn_cancel"
         android:layout_width="103dp"
         android:layout_height="44dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/grey"
         android:hint="@string/cancel"
         android:textColor="@color/black"
         app:layout_constraintBaseline_toBaselineOf="@+id/Btn_create"
