@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTintMode="src_in"
-    tools:context=".team_create">
+    tools:context=".team_managepage">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -77,6 +77,7 @@
             android:layout_marginStart="52dp"
             android:layout_marginTop="400dp"
             android:backgroundTint="@color/grey"
+            android:onClick="user_team_edit"
             android:text="EDIT" />
 
     </androidx.cardview.widget.CardView>
@@ -89,7 +90,7 @@
         android:layout_marginTop="24dp"
         android:fontFamily="sans-serif"
         android:text="Manage Teams"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -167,7 +168,6 @@
         android:layout_height="27dp"
         android:layout_marginStart="183dp"
         android:layout_marginBottom="24dp"
-        android:onClick="home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/home_black" />
@@ -178,7 +178,6 @@
         android:layout_height="27dp"
         android:layout_marginEnd="260dp"
         android:layout_marginBottom="23dp"
-        android:onClick="tournament_home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/cup_black" />
