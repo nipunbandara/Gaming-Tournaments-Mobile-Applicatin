@@ -181,6 +181,7 @@
             android:layout_marginStart="150dp"
             android:layout_marginTop="20dp"
             android:fontFamily="sans-serif"
+            android:onClick="tournament_info"
             android:text="Kill Confirmed 10V10 #31"
             android:textSize="14sp"
             android:textStyle="bold"
