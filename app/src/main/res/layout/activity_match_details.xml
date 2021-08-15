@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
     tools:context=".match_details">
 
     <androidx.appcompat.widget.Toolbar
@@ -136,6 +137,8 @@
         android:layout_marginTop="28dp"
         android:fontFamily="sans-serif"
         android:hint="@string/Tmatchdetails"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -162,7 +165,7 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/T_match_details"
-        app:layout_constraintVertical_bias="0.303">
+        app:layout_constraintVertical_bias="0.224">
 
         <ImageView
             android:id="@+id/match3_team1_img"
@@ -170,7 +173,7 @@
             android:layout_height="83dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            tools:srcCompat="@drawable/team1" />
+            tools:srcCompat="@drawable/team3" />
 
         <TextView
             android:id="@+id/match2_team2_name"
@@ -186,7 +189,7 @@
             android:layout_height="83dp"
             android:layout_marginStart="250dp"
             android:layout_marginTop="10dp"
-            tools:srcCompat="@drawable/team2" />
+            tools:srcCompat="@drawable/team4" />
 
         <TextView
             android:id="@+id/match2_team1_name"
@@ -200,17 +203,19 @@
             android:id="@+id/match2_team1_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="55dp"
-            android:text="8" />
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="45dp"
+            android:text="7"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/match2_team2_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="230dp"
-            android:layout_marginTop="55dp"
-            android:text="8" />
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="45dp"
+            android:text="8"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView41"
