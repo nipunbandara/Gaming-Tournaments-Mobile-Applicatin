@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
     tools:context=".game_user_gamelist">
 
 
@@ -268,9 +269,9 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="36dp"
         android:text="@string/user_subsgame"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18"
-        android:textSize="14sp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="346dp"

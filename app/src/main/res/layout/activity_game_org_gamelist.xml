@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
     tools:context=".game_org_gamelist">
 
 
-      <!-- nav bar -->
+    <!-- nav bar -->
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -233,12 +234,12 @@
 
         <Button
             android:id="@+id/edit_btn_t12"
-            android:onClick="update_new_game"
             android:layout_width="76dp"
             android:layout_height="33dp"
             android:layout_marginStart="150dp"
             android:layout_marginTop="50dp"
             android:backgroundTint="@color/grey"
+            android:onClick="update_new_game"
             android:text="EDIT"
             android:textSize="10sp"
             app:layout_constraintStart_toStartOf="parent"
