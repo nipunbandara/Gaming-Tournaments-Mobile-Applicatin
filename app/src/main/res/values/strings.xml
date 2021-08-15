@@ -138,4 +138,21 @@
     <string name="select_team">"Select the Team : "</string>
     <string name="join_now">Join Now</string>
     <string name="brackets">Brackets</string>
+    <string name="create_team">Create Team</string>
+    <string name="team_name">Team Name</string>
+    <string name="team_descrption">Team Description</string>
+    <string name="team_logo">Team Logo</string>
+    <string name="teams">Teams</string>
+    <string name="my_teams">My Teams</string>
+    <string name="code_name_alpha">CodeNameAlpha</string>
+    <string name="num_pl_20">Number of Players : 20</string>
+    <string name="maches_won20">Matches Won : 20</string>
+    <string name="shadow">Shadow</string>
+    <string name="create_a_team">Create a Team</string>
+    <string name="manage_teams">Manage Teams</string>
+    <string name="team_description">Team Description</string>
+    <string name="player_id">PlayerID</string>
+    <string name="invite">Invite</string>
+    <string name="team_players">Team Players:</string>
+    <string name="remove">Remove</string>
 </resources>

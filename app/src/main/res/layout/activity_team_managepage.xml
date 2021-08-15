@@ -24,7 +24,7 @@
             android:layout_marginVertical="325dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="PlayerID"
+            android:text="@string/player_id"
             android:textSize="14sp" />
 
         <TextView
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="CodeNameAlpha"
+            android:text="@string/code_name_alpha"
             android:textSize="16sp" />
 
         <TextView
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="25dp"
             android:layout_marginVertical="50dp"
-            android:text="Team Description" />
+            android:text="@string/team_description" />
 
         <ImageView
             android:id="@+id/imageView23"
@@ -58,7 +58,7 @@
             android:layout_marginVertical="325dp"
             android:layout_marginStart="200dp"
             android:backgroundTint="@color/light_grey_2"
-            android:text="Invite"
+            android:text="@string/invite"
             android:textSize="14sp" />
 
         <Button
@@ -68,7 +68,7 @@
             android:layout_marginStart="190dp"
             android:layout_marginTop="400dp"
             android:backgroundTint="@color/grey"
-            android:text="DELETE" />
+            android:text="@string/delete" />
 
         <Button
             android:id="@+id/save"
@@ -78,7 +78,7 @@
             android:layout_marginTop="400dp"
             android:backgroundTint="@color/grey"
             android:onClick="user_team_edit"
-            android:text="EDIT" />
+            android:text="@string/edit" />
 
     </androidx.cardview.widget.CardView>
 
@@ -89,7 +89,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:fontFamily="sans-serif"
-        android:text="Manage Teams"
+        android:text="@string/manage_teams"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
