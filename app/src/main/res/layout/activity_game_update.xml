@@ -5,9 +5,10 @@
     android:id="@+id/update_heading"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
     tools:context=".game_update">
 
-      <!-- nav bar -->
+    <!-- nav bar -->
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -202,9 +203,9 @@
         android:ems="10"
         android:hint="Max Teams"
         android:inputType="textPersonName"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/max_tm"
-        android:textSize="14sp" />
+        app:layout_constraintTop_toBottomOf="@+id/max_tm" />
 
     <TextView
         android:id="@+id/max_tm"

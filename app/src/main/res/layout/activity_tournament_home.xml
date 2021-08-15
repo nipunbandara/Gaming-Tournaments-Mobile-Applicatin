@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
     tools:context=".tournament_home">
 
     <!-- nav bar -->
@@ -231,6 +232,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:text="@string/tournament"
+        android:textSize="18sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="29dp" />
