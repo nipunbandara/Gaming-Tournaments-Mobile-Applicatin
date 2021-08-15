@@ -25,6 +25,13 @@ public class tournament_home extends AppCompatActivity {
 
     }
 
+    public void tournament_reg(View view){
+
+        Intent intent = new Intent(this, tournament_join_user.class);
+        startActivity(intent);
+
+    }
+
     public void home(View view){
 
         Intent intent = new Intent(this, MainActivity.class);
