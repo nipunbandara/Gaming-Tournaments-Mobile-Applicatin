@@ -1,6 +1,4 @@
 <resources>
-    <!-- Game -->
-
     <string name="name_key">Name</string>
     <string name="game_name">Name</string>
     <string name="gamename_key">Name</string>
@@ -9,8 +7,6 @@
     <string name="key_description">Description</string>
     <string name="key_minteams">Min Teams</string>
     <string name="button_image">Add image</string>
-
-    <!-- Tournament -->
     <string name="app_name">MAD_app</string>
     <string name="tournament_name">Tournament Name</string>
     <string name="tournament_type">Type</string>
@@ -24,10 +20,8 @@
     <string name="btn_browse">Browse</string>
     <string name="game_name_cod_mw">COD : MW</string>
     <string name="tournament_name_32">Team Death Match 5V5 #32</string>
-
     <string name="Tmatchdetails">Match Details</string>
     <string name="match_winner">Winner :</string>
-
     <string name="round1">Round 1</string>
     <string name="matches">Matches</string>
     <string name="vs">VS</string>
@@ -52,17 +46,14 @@
     <string name="added_tournaments">Added Tournaments</string>
     <string name="tournament_name1">"Tournament Name : "</string>
     <string name="create">CREATE</string>
-    <string name="cancel">CANCEL</string>
+    <string name="cancel">Cancel</string>
     <string name="browse">BROWSE</string>
     <string name="organizer_niimoh">Organizer : Niimoh</string>
     <string name="num_of_teams_5">Num of Teams : 5</string>
     <string name="min_4">Min : 4</string>
     <string name="max_16">Max : 16</string>
     <string name="joined_teams">Joined Teams :</string>
-
     <string name="leader_user_name">Leader User Name</string>
-
-    <!-- Team -->
     <string name="team_name">Team Name</string>
     <string name="game_region">Region</string>
     <string name="game_heading">Mobile Legends</string>
@@ -105,7 +96,6 @@
     <string name="user_playerinfo">Player Info</string>
     <string name="user_tournaments">Tournaments</string>
     <string name="user_mygames">My Games</string>
-
     <string name="user_Unsubscribe1">Unsubscribe</string>
     <string name="user_Unsubscribe">Unsubscribe</string>
     <string name="user_Cancle">Cancle</string>
@@ -134,7 +124,7 @@
     <string name="next">Next</string>
     <string name="top_10">Top 10</string>
     <string name="ongoing">Ongoin</string>
-    <string name="upcomming">Upcomming</string>
+    <string name="upcomming">Upcoming</string>
     <string name="select_team">"Select the Team : "</string>
     <string name="join_now">Join Now</string>
     <string name="brackets">Brackets</string>
