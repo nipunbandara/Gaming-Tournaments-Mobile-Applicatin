@@ -183,7 +183,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="100dp"
-            android:text="Legends" />
+            android:text="@string/legends" />
 
         <ImageView
             android:id="@+id/match3_team2_img"
@@ -201,7 +201,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="270dp"
             android:layout_marginTop="100dp"
-            android:text="Blazing" />
+            android:text="@string/blazing" />
 
         <TextView
             android:id="@+id/match2_team1_score"
@@ -236,7 +236,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:text="Blazing Dragons"
+        android:text="@string/blazing_dragons"
         app:layout_constraintBaseline_toBaselineOf="@+id/match_winner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.009"
@@ -248,7 +248,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="28dp"
-        android:text="Blazing"
+        android:text="@string/blazing"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/match_winner" />
 
@@ -258,7 +258,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="8dp"
-        android:text="Wretched Dragon"
+        android:text="@string/watched_dragons"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/match2_team1_name2" />
 
@@ -268,7 +268,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="12dp"
-        android:text="Legendary Arthur"
+        android:text="@string/legendary_arthur"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/match2_team2_name2" />
 
@@ -278,7 +278,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="12dp"
-        android:text="Legends"
+        android:text="@string/legends"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team1_member5" />
 
@@ -288,7 +288,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="8dp"
-        android:text="Legendary Natsu"
+        android:text="@string/legendary_natsu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team2_member2" />
 
@@ -298,7 +298,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="8dp"
-        android:text="Legendary Luffy"
+        android:text="@string/legendary_luffy"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team2_member3" />
 
@@ -308,7 +308,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="4dp"
-        android:text="Twin Dragon"
+        android:text="@string/twin_dragons"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team1_member1" />
 
@@ -318,7 +318,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="4dp"
-        android:text="Balling Dragon"
+        android:text="@string/balling_dragons"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team1_member3" />
 
@@ -328,7 +328,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="8dp"
-        android:text="Legendary Simpsons"
+        android:text="@string/legendary_simpsons"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team2_member4" />
 
@@ -338,7 +338,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="12dp"
-        android:text="Dynamic Dragon"
+        android:text="@string/dynamic_dragon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team1_member2" />
 
@@ -348,7 +348,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="8dp"
-        android:text="Legendary Merlin"
+        android:text="@string/legendary_merlin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team2_member1" />
 
@@ -358,7 +358,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="12dp"
-        android:text="Flame Dragon"
+        android:text="@string/flame_dragon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team1_member4" />
 
