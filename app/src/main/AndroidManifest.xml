@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".signup_organizer"
+            android:exported="true" />
+        <activity
             android:name=".tournament_org_tournament_info"
             android:exported="true" />
         <activity

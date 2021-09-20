@@ -23,4 +23,9 @@ public class login_org extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void org_signup(View view){
+        Intent intent = new Intent(this, signup_organizer.class);
+        startActivity(intent);
+    }
 }

@@ -88,11 +88,12 @@
         app:layout_constraintTop_toBottomOf="@+id/t_login4" />
 
     <TextView
-        android:id="@+id/signup5"
+        android:id="@+id/org_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:hint="@string/signup"
+        android:onClick="org_signup"
         app:layout_constraintBaseline_toBaselineOf="@+id/createanaccount5"
         app:layout_constraintStart_toEndOf="@+id/createanaccount5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,4 +23,8 @@ public class login_player extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void plyr_signup(View view){
+        Intent intent = new Intent(this, signup_player.class);
+        startActivity(intent);
+    }
 }

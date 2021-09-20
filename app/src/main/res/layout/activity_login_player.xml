@@ -53,11 +53,12 @@
         app:layout_constraintTop_toBottomOf="@+id/password_player" />
 
     <TextView
-        android:id="@+id/signup"
+        android:id="@+id/player_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:hint="@string/signup"
+        android:onClick="plyr_signup"
         app:layout_constraintBaseline_toBaselineOf="@+id/createanaccount"
         app:layout_constraintStart_toEndOf="@+id/createanaccount" />
 
