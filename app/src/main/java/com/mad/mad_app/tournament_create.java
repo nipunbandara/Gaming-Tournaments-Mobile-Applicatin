@@ -91,10 +91,16 @@ public class tournament_create extends AppCompatActivity {
                     loader.setCanceledOnTouchOutside(false);
                     loader.show();
 
+//                    FirebaseDatabase database = FirebaseDatabase.getInstance();
+//                    DatabaseReference myRef = database.getReference("message");
+//
+//                    myRef.setValue("Hello, World!");
+
                     String currentUserId = mAuth.getCurrentUser().getUid();
-                    userDatabaseRef = FirebaseDatabase.getInstance().getReference()
-                            .child("tournaments").child(currentUserId);
+                    userDatabaseRef = FirebaseDatabase.getInstance().getReference().child("tournaments");
                     //change child name to specific table name
+                    String id  = userDatabaseRef.push().getKey();
+
                     HashMap userInfo = new HashMap();
                     userInfo.put("id", currentUserId);
                     userInfo.put("tname", tnameString);
@@ -104,7 +110,7 @@ public class tournament_create extends AppCompatActivity {
                     userInfo.put("ttime", ttimeString);
                     userInfo.put("tselectedgame", tselectedgameString);
 
-                    userDatabaseRef.updateChildren(userInfo).addOnCompleteListener(new OnCompleteListener() {
+                    userDatabaseRef.child(id).setValue(userInfo).addOnCompleteListener(new OnCompleteListener() {
                         @Override
                         public void onComplete(@NonNull Task task) {
                             if (task.isSuccessful()) {
