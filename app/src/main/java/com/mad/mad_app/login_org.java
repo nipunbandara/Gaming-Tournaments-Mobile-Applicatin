@@ -40,7 +40,7 @@ public class login_org extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = mAuth.getCurrentUser();
                 if (user != null){
-                    Intent intent = new Intent(login_org.this, MainActivity.class);
+                    Intent intent = new Intent(login_org.this, organizer_home.class);
                     startActivity(intent);
                     finish();
                 }
@@ -87,7 +87,7 @@ public class login_org extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()){
-                                Intent intent = new Intent(login_org.this, MainActivity.class);
+                                Intent intent = new Intent(login_org.this, organizer_home.class);
                                 startActivity(intent);
                                 finish();
                                 progressDialog.dismiss();

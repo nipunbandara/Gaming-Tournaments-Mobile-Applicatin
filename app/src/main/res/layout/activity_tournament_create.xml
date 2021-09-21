@@ -199,7 +199,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/tname"
         android:layout_width="213dp"
         android:layout_height="35dp"
         android:layout_marginStart="60dp"
@@ -212,7 +212,7 @@
         app:layout_constraintTop_toBottomOf="@+id/t_bracket" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/ttype"
         android:layout_width="125dp"
         android:layout_height="35dp"
         android:layout_marginStart="60dp"
@@ -225,7 +225,7 @@
         app:layout_constraintTop_toBottomOf="@+id/t_bracket" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/tdate"
         android:layout_width="125dp"
         android:layout_height="35dp"
         android:layout_marginStart="60dp"
@@ -238,17 +238,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <EditText
-        android:id="@+id/editTextTime"
+        android:id="@+id/ttime"
         android:layout_width="88dp"
         android:layout_height="35dp"
         android:layout_marginStart="76dp"
-        android:layout_marginBottom="320dp"
+        android:layout_marginBottom="368dp"
         android:ems="10"
         android:hint="@string/tournament_time"
         android:inputType="time"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextDate" />
+        app:layout_constraintStart_toEndOf="@+id/tdate" />
 
     <Button
         android:id="@+id/button2"
@@ -276,18 +276,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="149dp"
-        android:layout_height="33dp"
+        android:id="@+id/tselectgame"
+        android:layout_width="176dp"
+        android:layout_height="32dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="8dp"
         android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/gamelist"
         android:spinnerMode="dropdown"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/t_round" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/tmaxteams"
         android:layout_width="88dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
