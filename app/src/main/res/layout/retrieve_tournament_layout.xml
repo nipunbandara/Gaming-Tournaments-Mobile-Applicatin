@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="25dp"
+    android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/tselectedgame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/game_name_cod_mw"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:onClick="tournament_info"
+            android:text="Kill Confirmed 10V10 #31"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/edit_t_btn"
+            android:layout_width="76dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/grey"
+            android:onClick="edit_tournament"
+            android:text="@string/edit"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/delete_t_btn"
+            android:layout_width="76dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/grey"
+            android:text="@string/delete"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="127dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-18dp"
+            android:src="@drawable/killconfirmed" />
+
+
+</androidx.cardview.widget.CardView>
