@@ -66,7 +66,7 @@
         app:layout_constraintTop_toBottomOf="@+id/username_player2" />
 
     <EditText
-        android:id="@+id/textUsername"
+        android:id="@+id/username"
         android:layout_width="147dp"
         android:layout_height="33dp"
         android:ems="10"
@@ -82,7 +82,7 @@
         android:layout_width="149dp"
         android:layout_height="32dp"
         android:ems="10"
-        android:inputType="textPassword"
+        android:inputType="textEmailAddress"
         app:layout_constraintBaseline_toBaselineOf="@+id/text_Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.46"
@@ -93,7 +93,7 @@
         android:layout_width="149dp"
         android:layout_height="32dp"
         android:ems="10"
-        android:inputType="textPassword"
+        android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/text_fName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.281"
@@ -121,4 +121,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/registerQn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:gravity="center"
+        android:text="have an account? Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_player" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
