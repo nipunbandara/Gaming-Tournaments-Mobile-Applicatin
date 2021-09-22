@@ -1,15 +1,16 @@
 package com.mad.mad_app;
 
 public class Tournament {
-    String id, tdate, tmaxteams, tname, tselectedgame, ttime, ttype;
+    String oid, tdate, tid, tmaxteams, tname, tselectedgame, ttime, ttype;
 
     public Tournament(){
 
     }
 
-    public Tournament(String id, String tdate, String tmaxteams, String tname, String tselectedgame, String ttime, String ttype) {
-        this.id = id;
+    public Tournament(String oid, String tdate, String tid, String tmaxteams, String tname, String tselectedgame, String ttime, String ttype) {
+        this.oid = oid;
         this.tdate = tdate;
+        this.tid = tid;
         this.tmaxteams = tmaxteams;
         this.tname = tname;
         this.tselectedgame = tselectedgame;
@@ -17,12 +18,12 @@ public class Tournament {
         this.ttype = ttype;
     }
 
-    public String getId() {
-        return id;
+    public String getOid() {
+        return oid;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setOid(String oid) {
+        this.oid = oid;
     }
 
     public String getTdate() {
@@ -31,6 +32,14 @@ public class Tournament {
 
     public void setTdate(String tdate) {
         this.tdate = tdate;
+    }
+
+    public String getTid() {
+        return tid;
+    }
+
+    public void setTid(String tid) {
+        this.tid = tid;
     }
 
     public String getTmaxteams() {
