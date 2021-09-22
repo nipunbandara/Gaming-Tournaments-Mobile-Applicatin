@@ -13,9 +13,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -39,6 +42,7 @@ public class tournament_org_list extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         tournamentRef = FirebaseDatabase.getInstance().getReference().child("tournaments");
+
 
 
         this.setTitle("Tournaments");
@@ -107,6 +111,24 @@ public class tournament_org_list extends AppCompatActivity {
                     }
                 });
 
+                dltbtn = holder.getDltbtn();
+                dltbtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        tournamentRef.child(model.getTid()).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful()){
+                                    Toast.makeText(tournament_org_list.this, "Deleted  successfully", Toast.LENGTH_SHORT).show();
+                                }else {
+                                    Toast.makeText(tournament_org_list.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
+                                }
+
+                            }
+                        });
+                    }
+                });
+
 
             }
 
@@ -133,10 +155,6 @@ public class tournament_org_list extends AppCompatActivity {
         public TextView tgame;
         public TextView tname;
 
-
-
-        public Button editbtn, dltbtn;
-
         public void setTgame(String tgame) {
             TextView item = mView.findViewById(R.id.tselectedgame);
             item.setText(tgame);
@@ -152,7 +170,8 @@ public class tournament_org_list extends AppCompatActivity {
             return item;
         }
         public Button getDltbtn() {
-            return dltbtn;
+            Button item = mView.findViewById(R.id.delete_t_btn);
+            return item;
         }
 
         public MyViewHolder(@NonNull View itemView) {
