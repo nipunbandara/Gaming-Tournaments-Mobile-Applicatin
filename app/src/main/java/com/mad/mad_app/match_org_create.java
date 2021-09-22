@@ -37,14 +37,14 @@ public class match_org_create extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_match_org_create);
 
-        mteamA = findViewById(R.id.mteamA);
-        mteamB = findViewById(R.id.mteamB);
-        mround = findViewById(R.id.mround);
+        mteamA = findViewById(R.id.mUteamA);
+        mteamB = findViewById(R.id.mUteamB);
+        mround = findViewById(R.id.mUround);
 
-        mtime = findViewById(R.id.mtime);
+        mtime = findViewById(R.id.mUtime);
 
-        registerBtn = findViewById(R.id.Btn_create);
-        registerQn = findViewById(R.id.Btn_cancel);
+        registerBtn = findViewById(R.id.Btn_Mupdate);
+        registerQn = findViewById(R.id.Btn_MUcancel);
         loader = new ProgressDialog(this);
 
         mAuth = FirebaseAuth.getInstance();
@@ -90,11 +90,11 @@ public class match_org_create extends AppCompatActivity {
                     String id  = userDatabaseRef.push().getKey();
 
                     HashMap userInfo = new HashMap();
-                    userInfo.put("id", currentUserId);
+                    userInfo.put("oid", currentUserId);
+                    userInfo.put("mid", id);
                     userInfo.put("mteamA", mteamAString);
                     userInfo.put("mteamB", mteamBString);
                     userInfo.put("mround", mroundString);
-
                     userInfo.put("ttime", mtimeString);
 
 

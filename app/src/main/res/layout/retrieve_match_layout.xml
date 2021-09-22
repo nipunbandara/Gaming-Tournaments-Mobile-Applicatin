@@ -7,7 +7,7 @@
     android:layout_margin="20dp">
 
 <Button
-    android:id="@+id/Btn_edit_match2"
+    android:id="@+id/Btn_edit_match"
     android:layout_width="76dp"
     android:layout_height="33dp"
     android:layout_marginStart="135dp"

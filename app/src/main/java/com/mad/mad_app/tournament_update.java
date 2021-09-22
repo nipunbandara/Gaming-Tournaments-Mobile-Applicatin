@@ -44,7 +44,7 @@ public class tournament_update extends AppCompatActivity {
 
         this.setTitle("Update Tournament");
 
-        Btn_update = findViewById(R.id.Btn_update);
+        Btn_update = findViewById(R.id.Btn_Mupdate);
         Btn_cancel = findViewById(R.id.Btn_UCancel);
 
         Intent myIntent = getIntent();

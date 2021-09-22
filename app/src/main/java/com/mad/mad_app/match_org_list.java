@@ -16,6 +16,7 @@ import android.app.ProgressDialog;
 
 
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -27,6 +28,9 @@ import com.google.firebase.database.FirebaseDatabase;
 public class match_org_list extends AppCompatActivity {
 
     private RecyclerView recyclerView;
+
+    private Button meditbtn;
+    private  Button mdltbtn;
 
     private FirebaseAuth mAuth;
     private ProgressDialog loader;
@@ -79,6 +83,16 @@ public class match_org_list extends AppCompatActivity {
                     }
                 });
 
+                meditbtn = holder.getmEditbtn();
+                meditbtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(match_org_list.this, match_org_update.class);
+                        intent.putExtra("MAIN_EXTRA", model.getmid());
+                        startActivity(intent);
+                    }
+                });
+
 
             }
 
@@ -106,6 +120,7 @@ public class match_org_list extends AppCompatActivity {
         public TextView mteamA;
         public TextView mteamB;
 
+
         public void setmteamA(String mteamA) {
             TextView item = mView.findViewById(R.id.teamA);
             item.setText(mteamA);
@@ -116,13 +131,19 @@ public class match_org_list extends AppCompatActivity {
             item.setText(mteamB);
         }
 
+        public Button getmEditbtn(){
+            Button item = mView.findViewById(R.id.Btn_edit_match);
+            return item;
+        }
+        public Button getmDltbtn() {
+            return mdltbtn;
+        }
+
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             mView = itemView;
             mteamA = itemView.findViewById(R.id.teamA);
             mteamB = itemView.findViewById(R.id.teamB);
-
-
 
         }
     }

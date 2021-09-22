@@ -2,28 +2,37 @@ package com.mad.mad_app;
 
 public class Match {
 
-    String id, mteamA, mteamB, mtime, mround;
+    String oid, id, mteamA, mteamB, mtime, mround;
 
     public Match(){
 
     }
 
-    public Match(String id, String mteamA, String mteamB, String mtime, String mround){
+    public Match(String oid, String id, String mteamA, String mteamB, String mround, String mtime){
 
+        this.oid = oid;
         this.id = id;
         this.mteamA = mteamA;
         this.mteamB = mteamB;
-        this.mtime = mtime;
         this.mround = mround;
+        this.mtime = mtime;
     }
 
 
-    public String getId() {
+    public String getmid() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setmid(String id) {
         this.id = id;
+    }
+
+    public String getoid() {
+        return oid;
+    }
+
+    public void setoid(String oid) {
+        this.oid = oid;
     }
 
     public String getmteamA() {

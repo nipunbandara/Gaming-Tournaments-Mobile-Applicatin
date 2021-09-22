@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Programing/Android Studio/MAD_app/app/src/main/res/layout/activity_match_org_create.xml" value="0.5" />
         <entry key="..\:/Programing/Android Studio/MAD_app/app/src/main/res/layout/activity_match_org_list.xml" value="0.3123123123123123" />
+        <entry key="..\:/Programing/Android Studio/MAD_app/app/src/main/res/layout/activity_match_org_update.xml" value="0.5" />
         <entry key="..\:/Programing/Android Studio/MAD_app/app/src/main/res/layout/activity_tournament_org_list.xml" value="0.36666666666666664" />
         <entry key="..\:/Programing/Android Studio/MAD_app/app/src/main/res/layout/activity_tournament_org_tournament_info.xml" value="0.36666666666666664" />
         <entry key="..\:/Programing/Android Studio/MAD_app/app/src/main/res/layout/retrieve_match_layout.xml" value="0.36666666666666664" />
@@ -19,9 +20,7 @@
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_login_player.xml" value="0.22" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_match_details.xml" value="0.25" />
-        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_match_org_create.xml" value="0.1763157894736842" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_match_org_list.xml" value="0.1763157894736842" />
-        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_match_org_update.xml" value="0.18" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_organizer_home.xml" value="0.22" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_organizer_organizer_info.xml" value="0.1763157894736842" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_player_playerinfo.xml" value="0.22" />
@@ -36,7 +35,7 @@
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_home.xml" value="1.0" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_join_user.xml" value="0.1763157894736842" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_org_list.xml" value="0.25" />
-        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_update.xml" value="0.25" />
+        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_update.xml" value="0.22" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_user_selected_t.xml" value="0.18" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/retrieve_tournament_layout.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_create.xml" value="0.4" />
