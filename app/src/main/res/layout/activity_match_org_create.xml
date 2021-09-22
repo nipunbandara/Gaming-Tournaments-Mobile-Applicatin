@@ -7,7 +7,7 @@
     android:background="@drawable/wallpaper"
     tools:context=".match_org_create">
 
-       <!-- nav bar -->
+    <!-- nav bar -->
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

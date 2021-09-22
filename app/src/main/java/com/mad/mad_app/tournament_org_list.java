@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -21,6 +22,9 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class tournament_org_list extends AppCompatActivity {
     private RecyclerView recyclerView;
+
+    private Button editbtn;
+    private  Button dltbtn;
 
     private FirebaseAuth mAuth;
     private ProgressDialog loader;
@@ -83,7 +87,6 @@ public class tournament_org_list extends AppCompatActivity {
                 holder.setTname(model.getTselectedgame());
 
 
-
                 holder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -91,6 +94,16 @@ public class tournament_org_list extends AppCompatActivity {
 //                        item = model.getItem();
 //                        amount = model.getAmount();
 //                        updateData();
+                    }
+                });
+
+                editbtn = holder.getEditbtn();
+                editbtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(tournament_org_list.this, tournament_update.class);
+                        intent.putExtra("MAIN_EXTRA", model.getTid());
+                        startActivity(intent);
                     }
                 });
 
@@ -120,6 +133,10 @@ public class tournament_org_list extends AppCompatActivity {
         public TextView tgame;
         public TextView tname;
 
+
+
+        public Button editbtn, dltbtn;
+
         public void setTgame(String tgame) {
             TextView item = mView.findViewById(R.id.tselectedgame);
             item.setText(tgame);
@@ -128,6 +145,14 @@ public class tournament_org_list extends AppCompatActivity {
         public void setTname(String tname) {
             TextView item = mView.findViewById(R.id.tname);
             item.setText(tname);
+        }
+
+        public Button getEditbtn(){
+            Button item = mView.findViewById(R.id.edit_t_btn);
+            return item;
+        }
+        public Button getDltbtn() {
+            return dltbtn;
         }
 
         public MyViewHolder(@NonNull View itemView) {
@@ -139,7 +164,6 @@ public class tournament_org_list extends AppCompatActivity {
     }
 
     public void add_tournament(View view){
-
         Intent intent = new Intent(this, tournament_create.class);
         startActivity(intent);
 

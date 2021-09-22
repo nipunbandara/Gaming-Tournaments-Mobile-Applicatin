@@ -102,7 +102,8 @@ public class tournament_create extends AppCompatActivity {
                     String id  = userDatabaseRef.push().getKey();
 
                     HashMap userInfo = new HashMap();
-                    userInfo.put("id", currentUserId);
+                    userInfo.put("tid", id);
+                    userInfo.put("oid", currentUserId);
                     userInfo.put("tname", tnameString);
                     userInfo.put("ttype", ttypeString);
                     userInfo.put("tmaxteams", tmaxteamsString);
