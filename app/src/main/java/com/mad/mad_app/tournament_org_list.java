@@ -135,9 +135,6 @@ public class tournament_org_list extends AppCompatActivity {
             mView = itemView;
             tgame = itemView.findViewById(R.id.tselectedgame);
             tname = itemView.findViewById(R.id.tname);
-
-
-
         }
     }
 

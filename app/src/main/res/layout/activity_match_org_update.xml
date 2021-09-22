@@ -129,7 +129,7 @@
     <!-- nav bar ends -->
 
     <Spinner
-        android:id="@+id/DD_teamA"
+        android:id="@+id/mteamA"
         android:layout_width="149dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
@@ -141,7 +141,7 @@
         app:layout_constraintTop_toBottomOf="@+id/t_teamA" />
 
     <Spinner
-        android:id="@+id/DD_teamA2"
+        android:id="@+id/mteamB"
         android:layout_width="149dp"
         android:layout_height="33dp"
         android:layout_marginTop="12dp"
@@ -161,7 +161,7 @@
         android:backgroundTint="@color/grey"
         android:hint="@string/user_Update"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TV_STD" />
+        app:layout_constraintTop_toBottomOf="@+id/mtime" />
 
     <Button
         android:id="@+id/Btn_delete"
@@ -186,7 +186,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+        app:layout_constraintTop_toBottomOf="@+id/mround" />
 
     <TextView
         android:id="@+id/t_teamA"
@@ -278,7 +278,7 @@
         app:layout_constraintStart_toEndOf="@+id/Btn_create" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/mround"
         android:layout_width="101dp"
         android:layout_height="36dp"
         android:layout_marginTop="12dp"
@@ -303,7 +303,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DD_teamA" />
+        app:layout_constraintTop_toBottomOf="@+id/mteamA" />
 
     <EditText
         android:id="@+id/TV_teamBScore2"
@@ -317,10 +317,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DD_teamA2" />
+        app:layout_constraintTop_toBottomOf="@+id/mteamB" />
 
     <EditText
-        android:id="@+id/TV_STD"
+        android:id="@+id/mtime"
         android:layout_width="136dp"
         android:layout_height="35dp"
         android:layout_marginStart="72dp"
@@ -337,7 +337,7 @@
         android:layout_marginEnd="24dp"
         android:ems="10"
         android:inputType="time"
-        app:layout_constraintBaseline_toBaselineOf="@+id/TV_STD"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mtime"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -128,30 +128,6 @@
 
     <!-- nav bar ends -->
 
-    <Spinner
-        android:id="@+id/DD_teamA"
-        android:layout_width="149dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.245"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t_teamA" />
-
-    <Spinner
-        android:id="@+id/DD_teamA2"
-        android:layout_width="149dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="12dp"
-        android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.278"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t_teamB" />
-
     <Button
         android:id="@+id/Btn_create"
         android:layout_width="103dp"
@@ -162,7 +138,7 @@
         android:hint="@string/create"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TV_STD"
+        app:layout_constraintTop_toBottomOf="@+id/mtime"
         app:layout_constraintVertical_bias="0.101" />
 
     <TextView
@@ -175,7 +151,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+        app:layout_constraintTop_toBottomOf="@+id/mround" />
 
     <TextView
         android:id="@+id/t_teamA"
@@ -193,25 +169,23 @@
         android:id="@+id/t_teamB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/teamb"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DD_teamA" />
+        tools:layout_editor_absoluteY="318dp" />
 
     <TextView
         android:id="@+id/t_startdateandtime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="@string/start_d_t"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DD_teamA2" />
+        tools:layout_editor_absoluteY="414dp" />
 
     <TextView
         android:id="@+id/cr_tournamet_topic"
@@ -254,6 +228,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/t_bracket" />
 
+    <EditText
+        android:id="@+id/mteamA"
+        android:layout_width="213dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/tournament_name"
+        android:inputType="textPersonName"
+        android:text="Team A"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_teamA" />
+
+    <EditText
+        android:id="@+id/mteamB"
+        android:layout_width="213dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/tournament_name"
+        android:inputType="textPersonName"
+        android:text="Team B"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_teamB" />
+
     <Button
         android:id="@+id/Btn_cancel"
         android:layout_width="103dp"
@@ -267,7 +271,7 @@
         app:layout_constraintStart_toEndOf="@+id/Btn_create" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/mround"
         android:layout_width="101dp"
         android:layout_height="36dp"
         android:layout_marginTop="12dp"
@@ -281,7 +285,7 @@
         app:layout_constraintTop_toBottomOf="@+id/t_round" />
 
     <EditText
-        android:id="@+id/TV_STD"
+        android:id="@+id/mtime"
         android:layout_width="136dp"
         android:layout_height="35dp"
         android:layout_marginStart="72dp"
@@ -298,7 +302,7 @@
         android:layout_marginEnd="24dp"
         android:ems="10"
         android:inputType="time"
-        app:layout_constraintBaseline_toBaselineOf="@+id/TV_STD"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mtime"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

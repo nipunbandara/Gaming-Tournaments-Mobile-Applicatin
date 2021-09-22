@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="25dp"
+    android:layout_margin="20dp">
+
+<Button
+    android:id="@+id/Btn_edit_match2"
+    android:layout_width="76dp"
+    android:layout_height="33dp"
+    android:layout_marginStart="135dp"
+    android:layout_marginTop="85dp"
+    android:backgroundTint="@color/grey"
+    android:onClick="match_org_update"
+    android:text="@string/edit"
+    android:textSize="10sp"
+   />
+
+<!--<ImageView-->
+<!--    android:id="@+id/match3_team1_img"-->
+<!--    android:layout_width="79dp"-->
+<!--    android:layout_height="83dp"-->
+<!--    android:layout_marginStart="10dp"-->
+<!--    android:layout_marginTop="10dp"-->
+<!--     />-->
+
+<TextView
+    android:id="@+id/teamA"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="100dp"
+    android:text="@string/legends" />
+
+<!--<ImageView-->
+<!--    android:id="@+id/match3_team2_img"-->
+<!--    android:layout_width="79dp"-->
+<!--    android:layout_height="83dp"-->
+<!--    android:layout_marginStart="250dp"-->
+<!--    android:layout_marginTop="10dp"-->
+<!--     />-->
+
+<TextView
+    android:id="@+id/teamB"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="270dp"
+    android:layout_marginTop="100dp"
+    android:text="@string/blazing" />
+
+<TextView
+    android:id="@+id/match2_team1_score"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="100dp"
+    android:layout_marginTop="45dp"
+    android:text="7"
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/match2_team2_score"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="230dp"
+    android:layout_marginTop="45dp"
+    android:text="8"
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/textView41"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="165dp"
+    android:layout_marginTop="50dp"
+    android:hint="@string/vs" />
+
+</androidx.cardview.widget.CardView>
