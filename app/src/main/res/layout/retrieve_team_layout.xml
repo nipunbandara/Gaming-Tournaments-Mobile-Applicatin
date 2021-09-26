@@ -6,13 +6,12 @@
     android:layout_margin="20dp">
 
 
-<ImageView
-            android:id="@+id/Teamimage"
-            android:layout_width="121dp"
-            android:layout_height="91dp"
-            android:layout_marginVertical="13dp"
-            android:onClick="user_team_managepage"
-            android:src="@drawable/codenamealpha"/>
+    <ImageView
+        android:id="@+id/Teamimage"
+        android:layout_width="121dp"
+        android:layout_height="91dp"
+        android:layout_marginVertical="13dp"
+        android:src="@drawable/codenamealpha" />
 
         <TextView
             android:id="@+id/playernum"

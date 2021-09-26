@@ -30,16 +30,17 @@
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_player_stats.xml" value="0.25" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_signup_organizer.xml" value="0.25" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_signup_player.xml" value="0.25" />
-        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_team_create.xml" value="0.1763157894736842" />
+        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_team_create.xml" value="0.25" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_team_home.xml" value="0.1763157894736842" />
-        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_team_managepage.xml" value="0.1763157894736842" />
-        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_team_update.xml" value="0.17402597402597403" />
+        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_team_managepage.xml" value="0.22" />
+        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_team_update.xml" value="0.5" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_create.xml" value="0.33" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_home.xml" value="1.0" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_join_user.xml" value="0.1763157894736842" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_org_list.xml" value="0.25" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_update.xml" value="0.22" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_user_selected_t.xml" value="0.18" />
+        <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/retrieve_team_layout.xml" value="0.1763157894736842" />
         <entry key="..\:/Users/Nipun B/AndroidStudioProjects/MAD_app/app/src/main/res/layout/retrieve_tournament_layout.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_create.xml" value="0.4" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_game_display_user.xml" value="0.25416666666666665" />
@@ -74,17 +75,6 @@
         <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_org_tournament_info.xml" value="0.3087719298245614" />
         <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_update.xml" value="0.2767543859649123" />
         <entry key="..\:/Users/nuduj/AndroidStudioProjects/MAD_app/app/src/main/res/layout/activity_tournament_user_selected_t.xml" value="0.2767543859649123" />
-        <entry key="app/src/main/res/layout/activity_organizer_organizer_info.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_team_create.xml" value="0.10498665896260359" />
-        <entry key="app/src/main/res/layout/activity_team_home.xml" value="0.2474423687517122" />
-        <entry key="app/src/main/res/layout/activity_team_managepage.xml" value="0.13" />
-        <entry key="app/src/main/res/layout/activity_team_update.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_tournament_create.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_tournament_org_list.xml" value="0.1912280701754386" />
-        <entry key="app/src/main/res/layout/activity_tournament_org_tournament_info.xml" value="0.1912280701754386" />
-        <entry key="app/src/main/res/layout/activity_tournament_user_selected_t.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/retrieve_team_layout.xml" value="0.18" />
-        <entry key="app/src/main/res/layout/retrieve_tournament_layout.xml" value="0.1" />
       </map>
     </option>
   </component>

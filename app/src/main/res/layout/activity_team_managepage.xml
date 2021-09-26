@@ -63,7 +63,7 @@
             android:textSize="14sp" />
 
         <Button
-            android:id="@+id/save23"
+            android:id="@+id/manage_delete"
             android:layout_width="103dp"
             android:layout_height="44dp"
             android:layout_marginStart="190dp"

@@ -6,19 +6,24 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class team_managepage extends AppCompatActivity {
     private Button editbtn;
     private  Button dltbtn;
     private String tid;
+    private TextView TeamName,Tdesc;
 
     private FirebaseAuth mAuth;
     private ProgressDialog loader;
@@ -32,6 +37,39 @@ public class team_managepage extends AppCompatActivity {
         Intent myIntent = getIntent();
         tid = myIntent.getStringExtra("MAIN_EXTRA");
         this.setTitle("Manage Team");
+
+
+        teamRef = FirebaseDatabase.getInstance().getReference().child("teams").child(tid);
+
+        teamRef.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+
+            @Override
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
+                if (!task.isSuccessful()) {
+                    Log.e("firebase", "Error getting data", task.getException());
+                }
+                else {
+                    Team team = task.getResult().getValue(Team.class);
+
+                    TeamName = findViewById(R.id.textView47);
+                    Tdesc = findViewById(R.id.textView49);
+
+                    TeamName.setText(team.getTmname());
+                    Tdesc.setText(team.getTdesc());
+
+                }
+            }
+        });
+
+
+
+
+
+
+
+
+
+
     }
 
     public void user_team_edit(View view){
@@ -45,29 +83,28 @@ public class team_managepage extends AppCompatActivity {
         super.onStart();
 
 
-            Button editbtn = findViewById(R.id.save);
+        editbtn = findViewById(R.id.save);
+
+        dltbtn = findViewById(R.id.manage_delete);
 
 
+        teamRef = FirebaseDatabase.getInstance().getReference().child("teams").child(tid);
 
-            Button dltbtn = findViewById(R.id.save23);
-
-
-
-
-                editbtn.setOnClickListener(new View.OnClickListener() {
+        editbtn.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(team_managepage.this, team_managepage.class);
-            intent.putExtra("MAIN_EXTRA", tid);
+            Intent intent = new Intent(team_managepage.this, team_update.class);
+            intent.putExtra("MAINEXTRA1", tid);
             startActivity(intent);
-        }
-    });
+            }
+        });
 
-
-                dltbtn.setOnClickListener(new View.OnClickListener() {
+        //delete method for specific team
+        dltbtn.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            teamRef.child(tid).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+            //deleting data from database
+            teamRef.removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
                     if (task.isSuccessful()){
@@ -79,7 +116,7 @@ public class team_managepage extends AppCompatActivity {
                 }
             });
         }
-    });
+        });
 
 
 }

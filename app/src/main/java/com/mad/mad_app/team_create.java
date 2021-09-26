@@ -11,13 +11,10 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -43,10 +40,12 @@ public class team_create extends AppCompatActivity {
 
         this.setTitle("Create Team");
 
+
         tmname = findViewById(R.id.editTextTextPersonName);
         tdesc = findViewById(R.id.editTextTextPersonName6);
         registerBtn = findViewById(R.id.save23);
         registerQn = findViewById(R.id.button44);
+
         loader = new ProgressDialog(this);
 
         mAuth = FirebaseAuth.getInstance();
@@ -70,23 +69,18 @@ public class team_create extends AppCompatActivity {
                     loader.setMessage("Registering you...");
                     loader.setCanceledOnTouchOutside(false);
                     loader.show();
-
-//                    FirebaseDatabase database = FirebaseDatabase.getInstance();
-//                    DatabaseReference myRef = database.getReference("message");
-//
-//                    myRef.setValue("Hello, World!");
-
+                    //database initialization
                     String currentUserId = mAuth.getCurrentUser().getUid();
                     userDatabaseRef = FirebaseDatabase.getInstance().getReference().child("teams");
-                    //change child name to specific table name
-                    String id  = userDatabaseRef.push().getKey();
 
+                    String id  = userDatabaseRef.push().getKey();
+                    //creating hashmap to set data
                     HashMap userInfo = new HashMap();
                     userInfo.put("tid", id);
                     userInfo.put("oid", currentUserId);
                     userInfo.put("tmname", tmnameString);
                     userInfo.put("tdesc", tdescString);
-
+                    //adding hashmap to the database
                     userDatabaseRef.child(id).setValue(userInfo).addOnCompleteListener(new OnCompleteListener() {
                         @Override
                         public void onComplete(@NonNull Task task) {
@@ -101,7 +95,7 @@ public class team_create extends AppCompatActivity {
                         }
                     });
 
-                    Intent intent = new Intent(team_create.this, organizer_home.class);
+                    Intent intent = new Intent(team_create.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                     loader.dismiss();

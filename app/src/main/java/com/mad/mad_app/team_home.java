@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,7 +27,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class team_home extends AppCompatActivity {
     private RecyclerView recyclerView;
 
-    private Button editbtn;
+    private ImageView editbtn;
     private  Button dltbtn;
 
     private FirebaseAuth mAuth;
@@ -54,43 +55,26 @@ public class team_home extends AppCompatActivity {
         startActivity(intent);
 
     }
-    public void user_team_managepage(View view){
-
-        Intent intent = new Intent(this, team_managepage.class);
-        startActivity(intent);
-
-    }
-
 
 
     @Override
     protected void onStart() {
         super.onStart();
-
+        //firebase recycler for for listing teams
         FirebaseRecyclerOptions<Team> options = new FirebaseRecyclerOptions.Builder<Team>()
                 .setQuery(teamRef, Team.class)
                 .build();
-
+        //initializing adapter
         FirebaseRecyclerAdapter adapter = new FirebaseRecyclerAdapter<Team, MyViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull MyViewHolder holder, final int position, @NonNull final Team model) {
 
-//                holder.setItemAmount("Allocated amount: $"+ model.getAmount());
-//                holder.setDate("On: "+model.getDate());
-//                holder.setItemName("BudgetItem: "+model.getItem());
-//
-//                holder.notes.setVisibility(View.GONE);
-
                 holder.setTmname(model.getTmname());
-
 
                 holder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-//                        post_key = getRef(position).getKey();
-//                        item = model.getItem();
-//                        amount = model.getAmount();
-//                        updateData();
+
                     }
                 });
 
@@ -104,27 +88,9 @@ public class team_home extends AppCompatActivity {
                     }
                 });
 
-                dltbtn = holder.getDltbtn();
-                dltbtn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        teamRef.child(model.getTid()).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if (task.isSuccessful()){
-                                    Toast.makeText(team_home.this, "Deleted  successfully", Toast.LENGTH_SHORT).show();
-                                }else {
-                                    Toast.makeText(team_home.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
-                                }
-
-                            }
-                        });
-                    }
-                });
-
 
             }
-
+            //setting retrieve layout
             @NonNull
             @Override
             public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -132,6 +98,7 @@ public class team_home extends AppCompatActivity {
                 return new MyViewHolder(view);
             }
         };
+        //setting adapter
         LinearLayoutManager manager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(manager);
         recyclerView.setHasFixedSize(true);
@@ -142,20 +109,21 @@ public class team_home extends AppCompatActivity {
 
 
     }
-
+    //viewholder class for specific team
     public class MyViewHolder extends RecyclerView.ViewHolder{
         View mView;
         public TextView tmname;
-
+        //setter for teamname
         public void setTmname(String tmname) {
             TextView item = mView.findViewById(R.id.teamname);
             item.setText(tmname);
         }
-
-        public Button getEditbtn(){
-            Button item = mView.findViewById(R.id.edit_t_btn);
+        //getter for editbutton
+        public ImageView getEditbtn(){
+            ImageView item = mView.findViewById(R.id.Teamimage);
             return item;
         }
+        //getter for delete button
         public Button getDltbtn() {
             Button item = mView.findViewById(R.id.delete_t_btn);
             return item;
@@ -165,8 +133,6 @@ public class team_home extends AppCompatActivity {
             super(itemView);
             mView = itemView;
             tmname = itemView.findViewById(R.id.teamname);
-
-
 
         }
     }

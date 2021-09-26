@@ -153,6 +153,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mUround" />
 
+
     <TextView
         android:id="@+id/t_teamB"
         android:layout_width="wrap_content"
