@@ -86,25 +86,26 @@ public class tournament_create extends AppCompatActivity {
                     Toast.makeText(tournament_create.this, "Select a Game", Toast.LENGTH_SHORT).show();
                 }
                 else {
-
                     loader.setMessage("Registering you...");
                     loader.setCanceledOnTouchOutside(false);
                     loader.show();
-
+                    //Database initialization, Getting reference and setting child path
                     String currentUserId = mAuth.getCurrentUser().getUid();
-                    userDatabaseRef = FirebaseDatabase.getInstance().getReference()
-                            .child("tournaments").child(currentUserId);
-                    //change child name to specific table name
+                    userDatabaseRef = FirebaseDatabase.getInstance().getReference().child("tournaments");
+
+                    String id  = userDatabaseRef.push().getKey();
+                    //using HashMap Data structure to add data to database
                     HashMap userInfo = new HashMap();
-                    userInfo.put("id", currentUserId);
+                    userInfo.put("tid", id);//tournament id
+                    userInfo.put("oid", currentUserId);//organizer id
                     userInfo.put("tname", tnameString);
                     userInfo.put("ttype", ttypeString);
                     userInfo.put("tmaxteams", tmaxteamsString);
                     userInfo.put("tdate", tdateString);
                     userInfo.put("ttime", ttimeString);
                     userInfo.put("tselectedgame", tselectedgameString);
-
-                    userDatabaseRef.updateChildren(userInfo).addOnCompleteListener(new OnCompleteListener() {
+                    //allocating hashmap to the database child
+                    userDatabaseRef.child(id).setValue(userInfo).addOnCompleteListener(new OnCompleteListener() {
                         @Override
                         public void onComplete(@NonNull Task task) {
                             if (task.isSuccessful()) {
@@ -112,7 +113,6 @@ public class tournament_create extends AppCompatActivity {
                             } else {
                                 Toast.makeText(tournament_create.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
                             }
-
                             finish();
                             //loader.dismiss();
                         }
