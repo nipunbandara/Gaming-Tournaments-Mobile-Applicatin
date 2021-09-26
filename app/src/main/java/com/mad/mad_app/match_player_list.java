@@ -13,7 +13,6 @@ public class match_player_list extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_match_player_list);
 
-
         this.setTitle("Brackets");
     }
 

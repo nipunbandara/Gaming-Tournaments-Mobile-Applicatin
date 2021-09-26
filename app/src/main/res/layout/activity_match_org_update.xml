@@ -128,32 +128,8 @@
 
     <!-- nav bar ends -->
 
-    <Spinner
-        android:id="@+id/DD_teamA"
-        android:layout_width="149dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.245"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t_teamA" />
-
-    <Spinner
-        android:id="@+id/DD_teamA2"
-        android:layout_width="149dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="12dp"
-        android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.278"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t_teamB" />
-
     <Button
-        android:id="@+id/Btn_create"
+        android:id="@+id/Btn_Mupdate"
         android:layout_width="103dp"
         android:layout_height="44dp"
         android:layout_marginStart="60dp"
@@ -161,44 +137,20 @@
         android:backgroundTint="@color/grey"
         android:hint="@string/user_Update"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TV_STD" />
-
-    <Button
-        android:id="@+id/Btn_delete"
-        android:layout_width="103dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/grey"
-        android:hint="@string/delete"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Btn_create"
-        app:layout_constraintVertical_bias="0.058" />
-
-    <TextView
-        android:id="@+id/t_bracket"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/brackets_ws"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+        app:layout_constraintTop_toBottomOf="@+id/mUtime" />
 
     <TextView
         android:id="@+id/t_teamA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         android:text="@string/teama"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/create_teamname" />
+        app:layout_constraintTop_toBottomOf="@+id/mUround" />
+
 
     <TextView
         android:id="@+id/t_teamB"
@@ -242,7 +194,7 @@
         android:id="@+id/t_round"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="44dp"
         android:text="@string/round"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -251,40 +203,54 @@
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
 
     <EditText
-        android:id="@+id/create_teamname"
+
+        android:id="@+id/mUteamA"
         android:layout_width="213dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/tournament_name"
         android:inputType="textPersonName"
-        android:text="Bracket"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.377"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t_bracket" />
+        app:layout_constraintTop_toBottomOf="@+id/t_teamA" />
+
+    <EditText
+        android:id="@+id/mUteamB"
+        android:layout_width="213dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/tournament_name"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_teamB" />
 
     <Button
-        android:id="@+id/Btn_cancel"
+        android:id="@+id/Btn_MUcancel"
         android:layout_width="103dp"
         android:layout_height="44dp"
         android:backgroundTint="@color/grey"
         android:hint="@string/cancel"
         android:textColor="@color/black"
-        app:layout_constraintBaseline_toBaselineOf="@+id/Btn_create"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Btn_Mupdate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toEndOf="@+id/Btn_create" />
+        app:layout_constraintStart_toEndOf="@+id/Btn_Mupdate" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/mUround"
         android:layout_width="101dp"
         android:layout_height="36dp"
         android:layout_marginTop="12dp"
         android:ems="10"
+        android:hint="@string/round"
         android:inputType="textPersonName"
-        android:text="Round"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.205"
@@ -295,15 +261,15 @@
         android:id="@+id/TV_teamAScore"
         android:layout_width="101dp"
         android:layout_height="36dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/team_a_scores"
+        android:text="0"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DD_teamA" />
+        app:layout_constraintTop_toBottomOf="@+id/mUteamA" />
 
     <EditText
         android:id="@+id/TV_teamBScore2"
@@ -312,32 +278,24 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/team_b_scores"
+        android:text="0"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintHorizontal_bias="0.246"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DD_teamA2" />
+        app:layout_constraintTop_toBottomOf="@+id/mUteamB" />
 
     <EditText
-        android:id="@+id/TV_STD"
+        android:id="@+id/mUtime"
         android:layout_width="136dp"
         android:layout_height="35dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="@string/select_date_and_time"
         android:inputType="date"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/t_startdateandtime" />
-
-    <EditText
-        android:id="@+id/editTextTime2"
-        android:layout_width="139dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:inputType="time"
-        app:layout_constraintBaseline_toBaselineOf="@+id/TV_STD"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
