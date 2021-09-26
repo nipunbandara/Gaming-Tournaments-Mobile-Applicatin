@@ -1,17 +1,17 @@
 package com.mad.mad_app;
 
 public class Team {
-    String oid, tid, tmname, tdesc;
+    String oid, tdesc, tid, tmname;
 
-    public Team(){
+    public Team() {
 
     }
 
-    public Team(String oid, String tid, String tmname, String tdesc) {
+    public Team(String oid, String tdesc, String tid, String tmname) {
         this.oid = oid;
+        this.tdesc = tdesc;
         this.tid = tid;
         this.tmname = tmname;
-        this.tdesc = tdesc;
     }
 
     public String getOid() {
@@ -20,6 +20,14 @@ public class Team {
 
     public void setOid(String oid) {
         this.oid = oid;
+    }
+
+    public String getTdesc() {
+        return tdesc;
+    }
+
+    public void setTdesc(String tdesc) {
+        this.tdesc = tdesc;
     }
 
     public String getTid() {
@@ -34,16 +42,8 @@ public class Team {
         return tmname;
     }
 
-    public void setTmname(String tname) {
+    public void setTmname(String tmname) {
         this.tmname = tmname;
-    }
-
-    public String getTdesc() {
-        return tdesc;
-    }
-
-    public void setTdesc(String tdesc) {
-        this.tdesc = tdesc;
     }
 }
 

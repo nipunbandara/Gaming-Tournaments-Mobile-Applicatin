@@ -85,32 +85,28 @@ public class tournament_update extends AppCompatActivity {
         Btn_update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Tournament t = new Tournament();
-
                 TournamentName = findViewById(R.id.TournamentName);
                 tType = findViewById(R.id.tType);
                 tDate = findViewById(R.id.tDate);
                 tTime = findViewById(R.id.tTime);
-
+                //converting activity data to string data type
                 TnameString = TournamentName.getText().toString();
                 TtypeString = tType.getText().toString();
                 TdateString = tDate.getText().toString();
                 TtimeString = tTime.getText().toString();
-
-
+                //Adding updated data to hashMap
                 HashMap userInfo = new HashMap();
                 userInfo.put("tname", TnameString);
                 userInfo.put("ttype", TtypeString);
                 userInfo.put("tdate", TdateString);
                 userInfo.put("ttime", TtimeString);
-
-
+                //adding hashmap data to the database
                 tournamentRef.updateChildren(userInfo).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()){
                             Toast.makeText(tournament_update.this, "Updated successfully", Toast.LENGTH_SHORT).show();
-
+                            //if success redirect to home
                             Intent intent = new Intent(tournament_update.this, tournament_org_list.class);
                             startActivity(intent);
                             finish();

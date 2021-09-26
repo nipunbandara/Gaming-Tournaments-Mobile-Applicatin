@@ -198,7 +198,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/create_teamname" />
 
     <TextView
         android:id="@+id/t_teamB"
@@ -251,7 +251,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/create_teamname"
         android:layout_width="213dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"

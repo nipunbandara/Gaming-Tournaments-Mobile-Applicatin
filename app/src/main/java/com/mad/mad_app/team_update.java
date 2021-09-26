@@ -44,13 +44,15 @@ public class team_update extends AppCompatActivity {
 
         this.setTitle("Update Team");
 
-        Btn_update = findViewById(R.id.Btn_update);
-        Btn_cancel = findViewById(R.id.Btn_UCancel);
+        Btn_update = findViewById(R.id.save23);
+        Btn_cancel = findViewById(R.id.button44);
 
         Intent myIntent = getIntent();
-        tid = myIntent.getStringExtra("MAIN_EXTRA");
+        tid = myIntent.getStringExtra("MAINEXTRA1");
 
         mAuth = FirebaseAuth.getInstance();
+
+
         teamRef = FirebaseDatabase.getInstance().getReference().child("teams").child(tid);
 
         teamRef.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
@@ -63,11 +65,11 @@ public class team_update extends AppCompatActivity {
                 else {
                     Team team = task.getResult().getValue(Team.class);
 
-                    TxtTmname = findViewById(R.id.editTextTextPersonName);
-                    Tdesc = findViewById(R.id.editTextTextPersonName6);
+                    TeamName = findViewById(R.id.update_teamname);
+                    Tdesc = findViewById(R.id.update_team_des);
 
-                    TxtTmname.setText(team.getTmname());
-
+                    TeamName.setText(team.getTmname());
+                    Tdesc.setText(team.getTdesc());
 
                 }
             }
@@ -76,20 +78,17 @@ public class team_update extends AppCompatActivity {
         Btn_update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Team t = new Team();
 
-                TxtTmname = findViewById(R.id.editTextTextPersonName);
-                Tdesc = findViewById(R.id.editTextTextPersonName6);
+                TeamName = findViewById(R.id.create_teamname);
+                Tdesc = findViewById(R.id.create_team_des);
 
                 TmnameString = TeamName.getText().toString();
                 TdescString = Tdesc.getText().toString();
-
-
+                //assigning new data to hashmap
                 HashMap userInfo = new HashMap();
                 userInfo.put("tnname", TmnameString);
                 userInfo.put("tdesc", TdescString);
-
-
+                //setting update data to db
                 teamRef.updateChildren(userInfo).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
