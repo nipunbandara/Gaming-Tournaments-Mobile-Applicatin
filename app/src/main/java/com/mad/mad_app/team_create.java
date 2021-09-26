@@ -41,8 +41,8 @@ public class team_create extends AppCompatActivity {
         this.setTitle("Create Team");
 
 
-        tmname = findViewById(R.id.editTextTextPersonName);
-        tdesc = findViewById(R.id.editTextTextPersonName6);
+        tmname = findViewById(R.id.create_teamname);
+        tdesc = findViewById(R.id.create_team_des);
         registerBtn = findViewById(R.id.save23);
         registerQn = findViewById(R.id.button44);
 

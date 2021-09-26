@@ -74,21 +74,15 @@ public class tournament_org_list extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-
+        //firebase recycler for listing tournaments
         FirebaseRecyclerOptions<Tournament> options = new FirebaseRecyclerOptions.Builder<Tournament>()
                 .setQuery(tournamentRef, Tournament.class)
                 .build();
-
+        //initializing adapter
         FirebaseRecyclerAdapter adapter = new FirebaseRecyclerAdapter<Tournament, MyViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull MyViewHolder holder, final int position, @NonNull final Tournament model) {
-
-//                holder.setItemAmount("Allocated amount: $"+ model.getAmount());
-//                holder.setDate("On: "+model.getDate());
-//                holder.setItemName("BudgetItem: "+model.getItem());
-//
-//                holder.notes.setVisibility(View.GONE);
-
+                //setting holder for specific data
                 holder.setTgame(model.getTname());
                 holder.setTname(model.getTselectedgame());
 
@@ -103,14 +97,10 @@ public class tournament_org_list extends AppCompatActivity {
                     }
                 });
 
-
                 holder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-//                        post_key = getRef(position).getKey();
-//                        item = model.getItem();
-//                        amount = model.getAmount();
-//                        updateData();
+
                     }
                 });
 
@@ -123,11 +113,12 @@ public class tournament_org_list extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
-
+                //getting specific delete button id from holder
                 dltbtn = holder.getDltbtn();
                 dltbtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        //removing data from database
                         tournamentRef.child(model.getTid()).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
@@ -144,7 +135,7 @@ public class tournament_org_list extends AppCompatActivity {
 
 
             }
-
+            //setting layout page for holder
             @NonNull
             @Override
             public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -152,6 +143,7 @@ public class tournament_org_list extends AppCompatActivity {
                 return new MyViewHolder(view);
             }
         };
+        //setting adapter for listing tournaments
         LinearLayoutManager manager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(manager);
         recyclerView.setHasFixedSize(true);
@@ -162,17 +154,17 @@ public class tournament_org_list extends AppCompatActivity {
 
 
     }
-
+    //setting viewholder class for specific tournament
     public class MyViewHolder extends RecyclerView.ViewHolder{
         View mView;
         public TextView tgame;
         public TextView tname;
-
+        //setting game name method
         public void setTgame(String tgame) {
             TextView item = mView.findViewById(R.id.tselectedgame);
             item.setText(tgame);
         }
-
+        //setting tournament name method
         public void setTname(String tname) {
             TextView item = mView.findViewById(R.id.tname);
             item.setText(tname);
@@ -182,16 +174,16 @@ public class tournament_org_list extends AppCompatActivity {
             TextView item = mView.findViewById(R.id.tname);
             return item;
         }
-
+        //getting editbutton method
         public Button getEditbtn(){
             Button item = mView.findViewById(R.id.edit_t_btn);
             return item;
         }
+        //getting delete button method
         public Button getDltbtn() {
             Button item = mView.findViewById(R.id.delete_t_btn);
             return item;
         }
-
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             mView = itemView;

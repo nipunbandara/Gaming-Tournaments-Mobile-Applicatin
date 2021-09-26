@@ -131,7 +131,7 @@
 
 
     <Button
-        android:id="@+id/btn_cancel"
+        android:id="@+id/j_btn_cancel"
         android:layout_width="107dp"
         android:layout_height="49dp"
         android:layout_marginStart="44dp"
@@ -160,6 +160,7 @@
         android:layout_marginStart="27dp"
         android:layout_marginTop="85dp"
         android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/teamlist"
         android:spinnerMode="dropdown"
         app:layout_constraintStart_toEndOf="@+id/t_round2"
         app:layout_constraintTop_toBottomOf="@+id/cr_tournamet_topic2" />
