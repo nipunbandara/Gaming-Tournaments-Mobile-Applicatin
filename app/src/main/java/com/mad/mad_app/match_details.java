@@ -11,7 +11,7 @@ public class match_details extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_match_details);
 
-
+        //Set the Title of the Activity
         this.setTitle("Match Details");
     }
 }

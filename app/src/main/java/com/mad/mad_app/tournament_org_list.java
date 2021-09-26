@@ -29,6 +29,8 @@ public class tournament_org_list extends AppCompatActivity {
     private Button editbtn;
     private  Button dltbtn;
 
+    private TextView ttid;
+
     private FirebaseAuth mAuth;
     private ProgressDialog loader;
     private DatabaseReference tournamentRef;
@@ -89,6 +91,17 @@ public class tournament_org_list extends AppCompatActivity {
 
                 holder.setTgame(model.getTname());
                 holder.setTname(model.getTselectedgame());
+
+                ttid = holder.getttid();
+                ttid.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(tournament_org_list.this, tournament_org_tournament_info.class);
+                        intent.putExtra("TID", model.getTid());
+                        //intent.putExtra("TID", "Helllow hai");
+                        startActivity(intent);
+                    }
+                });
 
 
                 holder.mView.setOnClickListener(new View.OnClickListener() {
@@ -165,6 +178,11 @@ public class tournament_org_list extends AppCompatActivity {
             item.setText(tname);
         }
 
+        public TextView getttid(){
+            TextView item = mView.findViewById(R.id.tname);
+            return item;
+        }
+
         public Button getEditbtn(){
             Button item = mView.findViewById(R.id.edit_t_btn);
             return item;
@@ -198,6 +216,7 @@ public class tournament_org_list extends AppCompatActivity {
     public void tournament_info(View view){
 
         Intent intent = new Intent(this, tournament_org_tournament_info.class);
+        //intent.putExtra("TID", "Helllow hai");
         startActivity(intent);
 
     }

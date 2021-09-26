@@ -17,23 +17,33 @@ import android.app.ProgressDialog;
 
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class match_org_list extends AppCompatActivity {
 
+    //Declare Variables
     private RecyclerView recyclerView;
 
     private Button meditbtn;
     private  Button mdltbtn;
 
+    private TextView TxtTname;
+
+    private String tid;
+
     private FirebaseAuth mAuth;
-    private ProgressDialog loader;
+
+
     private DatabaseReference matchRef;
 
     @Override
@@ -43,10 +53,15 @@ public class match_org_list extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerView);
 
+        //Explicit intent to receive the Tournament ID
+        Intent myIntent = getIntent();
+        tid = myIntent.getStringExtra("TIDtomatch");
+
+        //Firebase intialization
         mAuth = FirebaseAuth.getInstance();
-        matchRef = FirebaseDatabase.getInstance().getReference().child("matches");
+        matchRef = FirebaseDatabase.getInstance().getReference().child("matches").child(tid);
 
-
+        //Title of the activity
         this.setTitle("Create Match");
     }
 
@@ -54,51 +69,69 @@ public class match_org_list extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
+        //Firebase Recycler initiation
         FirebaseRecyclerOptions<Match> options = new FirebaseRecyclerOptions.Builder<Match>()
                 .setQuery(matchRef, Match.class)
                 .build();
 
+        //Firebase Initiation
         FirebaseRecyclerAdapter adapter = new FirebaseRecyclerAdapter<Match, MyViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull MyViewHolder holder, final int position, @NonNull final Match model) {
 
-//                holder.setItemAmount("Allocated amount: $"+ model.getAmount());
-//                holder.setDate("On: "+model.getDate());
-//                holder.setItemName("BudgetItem: "+model.getItem());
-//
-//                holder.notes.setVisibility(View.GONE);
-
-                holder.setmteamA(model.getmteamA());
-                holder.setmteamB(model.getmteamB());
-
-
+                //Set Variables to the holder
+                holder.setmteamA(model.getMteamA());
+                holder.setmteamB(model.getMteamB());
 
                 holder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-//                        post_key = getRef(position).getKey();
-//                        item = model.getItem();
-//                        amount = model.getAmount();
-//                        updateData();
                     }
                 });
 
+                //Initiate edit button to the relevant holder
                 meditbtn = holder.getmEditbtn();
+
+                //Method to be called if the Edit button is pressed.
                 meditbtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+
+                        //Explicit Intent to direct to the Update match details page and send match id to the relevant match details page
                         Intent intent = new Intent(match_org_list.this, match_org_update.class);
-                        intent.putExtra("MAIN_EXTRA", model.getmid());
+                        intent.putExtra("mid", model.getMid());
                         startActivity(intent);
                     }
                 });
 
+                //Initiate Delete button to the relevant holder
+                mdltbtn = holder.getmDltbtn();
 
+                //Method to be called if the Delete button is pressed.
+                mdltbtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        matchRef.child(model.getMid()).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful()){
+                                    //Toast if Update match records is successful
+                                    Toast.makeText(match_org_list.this, "Deleted  successfully", Toast.LENGTH_SHORT).show();
+                                }else {
+                                    //Toast if Update match records is unsuccessful
+                                    Toast.makeText(match_org_list.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+                    }
+                });
             }
 
             @NonNull
             @Override
             public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
+                //Initialize layout to be used for display the match
                 View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.retrieve_match_layout, parent, false);
                 return new MyViewHolder(view);
             }
@@ -110,11 +143,9 @@ public class match_org_list extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         adapter.startListening();
         adapter.notifyDataSetChanged();
-
-
     }
 
-
+    //ViewHolder class to initialize data fetched from the database
     public class MyViewHolder extends RecyclerView.ViewHolder{
         View mView;
         public TextView mteamA;
@@ -132,10 +163,11 @@ public class match_org_list extends AppCompatActivity {
         }
 
         public Button getmEditbtn(){
-            Button item = mView.findViewById(R.id.Btn_edit_match);
+            Button item = mView.findViewById(R.id.btn_edit_match);
             return item;
         }
         public Button getmDltbtn() {
+            Button mdltbtn = mView.findViewById(R.id.btn_dlt_match);
             return mdltbtn;
         }
 
@@ -150,7 +182,14 @@ public class match_org_list extends AppCompatActivity {
 
     public void match_org_create(View view){
 
+        //Intent to receive the tournament ID
+        Intent myIntent = getIntent();
+        tid = myIntent.getStringExtra("TIDtomatch");
+
+        //Explicit Intent to pass
+        // tournament ID to teh Create match Activity
         Intent intent = new Intent(this, match_org_create.class);
+        intent.putExtra("tid", tid);
         startActivity(intent);
 
     }

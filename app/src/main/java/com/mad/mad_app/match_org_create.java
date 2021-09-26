@@ -23,42 +23,60 @@ import java.util.HashMap;
 
 public class match_org_create extends AppCompatActivity {
 
+    //Declare Variables
+
     private EditText id, mteamA, mteamB, mtime, mround;
-//    private Spinner tselectgame;
+
     private Button registerBtn;
-    private TextView registerQn;
+    private TextView registerQn, test;
+
+    private TextView t_round;
 
     private FirebaseAuth mAuth;
-    private ProgressDialog loader;
-    private DatabaseReference userDatabaseRef;
+
+   // private ProgressDialog loader;
+    private DatabaseReference matchDatabaseRef;
+
+    //Declare Variable to get the tournament ID
+    private String mtid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_match_org_create);
 
+        //Get User input data to the variables
         mteamA = findViewById(R.id.mUteamA);
         mteamB = findViewById(R.id.mUteamB);
         mround = findViewById(R.id.mUround);
-
         mtime = findViewById(R.id.mUtime);
 
+        //Get user response to the buttons
         registerBtn = findViewById(R.id.Btn_Mupdate);
         registerQn = findViewById(R.id.Btn_MUcancel);
-        loader = new ProgressDialog(this);
 
+        //declare Firebase variables
         mAuth = FirebaseAuth.getInstance();
 
+//        //Get Explicit Intent from match_org_list Activity
+//        Intent myIntent = getIntent();
+//        mtid = myIntent.getStringExtra("tid");
+
+//        test = findViewById(R.id.t_round);
+//        test.setText(mtid);
+
+        //Method to be called on RegisterBtn click
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                //Store user input in String Variables
                 String mteamAString = mteamA.getText().toString();
                 String mteamBString = mteamB.getText().toString();
                 String mroundString = mround.getText().toString();
-
                 String mtimeString = mtime.getText().toString();
 
-
+                //Validate User Input
                 if (TextUtils.isEmpty(mteamAString)) {
                     mteamA.setError("Team A is required");
                 }
@@ -72,54 +90,52 @@ public class match_org_create extends AppCompatActivity {
                 if (TextUtils.isEmpty(mtimeString)) {
                     mtime.setError("Time is requried");
                 }
-
+                //If Validation Successful
                 else {
 
-                    loader.setMessage("Creating Match...");
-                    loader.setCanceledOnTouchOutside(false);
-                    loader.show();
+                    //Get Explicit Intent from match_org_list Activity
+                    Intent myIntent = getIntent();
+                    mtid = myIntent.getStringExtra("tid");
 
-//                    FirebaseDatabase database = FirebaseDatabase.getInstance();
-//                    DatabaseReference myRef = database.getReference("message");
-//
-//                    myRef.setValue("Hello, World!");
-
+                    //Reference match Database
                     String currentUserId = mAuth.getCurrentUser().getUid();
-                    userDatabaseRef = FirebaseDatabase.getInstance().getReference().child("matches");
-                    //change child name to specific table name
-                    String id  = userDatabaseRef.push().getKey();
+                    matchDatabaseRef = FirebaseDatabase.getInstance().getReference().child("matches").child(mtid);
 
+                    //Match unique key generate
+                    String id  = matchDatabaseRef.push().getKey();
+
+                    //Store User input data in a hashmap
                     HashMap userInfo = new HashMap();
                     userInfo.put("oid", currentUserId);
                     userInfo.put("mid", id);
+                    userInfo.put("mtid", mtid);
                     userInfo.put("mteamA", mteamAString);
                     userInfo.put("mteamB", mteamBString);
                     userInfo.put("mround", mroundString);
                     userInfo.put("ttime", mtimeString);
 
-
-                    userDatabaseRef.child(id).setValue(userInfo).addOnCompleteListener(new OnCompleteListener() {
+                    //Send to Database to create the entry.
+                    matchDatabaseRef.child(id).setValue(userInfo).addOnCompleteListener(new OnCompleteListener() {
                         @Override
                         public void onComplete(@NonNull Task task) {
                             if (task.isSuccessful()) {
-                                Toast.makeText(match_org_create.this, "Match set Successfully", Toast.LENGTH_SHORT).show();
+                                //Display match entry Successful Toast
+                                Toast.makeText(match_org_create.this, "Match created Successfully", Toast.LENGTH_SHORT).show();
                             } else {
+                                //Display match entry Successful Toast
                                 Toast.makeText(match_org_create.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
                             }
 
                             finish();
-                            //loader.dismiss();
                         }
                     });
 
-                    Intent intent = new Intent(match_org_create.this, organizer_home.class);
+                    //Intent to redirect the user to match_org_create irrespective of the result of the match creation
+                    Intent intent = new Intent(match_org_create.this, match_org_list.class);
                     startActivity(intent);
                     finish();
-                    loader.dismiss();
-
                 }
-
             }
         });
     }
-    }
+}
