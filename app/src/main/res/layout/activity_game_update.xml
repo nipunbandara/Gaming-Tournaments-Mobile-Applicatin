@@ -110,7 +110,7 @@
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName8"
+        android:id="@+id/update_name"
         android:layout_width="227dp"
         android:layout_height="38dp"
         android:layout_marginStart="66dp"
@@ -123,7 +123,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <EditText
-        android:id="@+id/key_region"
+        android:id="@+id/update_region"
         android:layout_width="229dp"
         android:layout_height="38dp"
         android:layout_marginStart="68dp"
@@ -144,10 +144,10 @@
         android:text="Enter the region"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+        app:layout_constraintTop_toBottomOf="@+id/update_name" />
 
     <EditText
-        android:id="@+id/descript_key"
+        android:id="@+id/update_des"
         android:layout_width="225dp"
         android:layout_height="45dp"
         android:layout_marginStart="66dp"
@@ -168,10 +168,10 @@
         android:text="@string/update_des"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/key_region" />
+        app:layout_constraintTop_toBottomOf="@+id/update_region" />
 
     <EditText
-        android:id="@+id/min_tm_key"
+        android:id="@+id/update_min"
         android:layout_width="232dp"
         android:layout_height="48dp"
         android:layout_marginStart="64dp"
@@ -192,10 +192,10 @@
         android:text="@string/update_minteams"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descript_key" />
+        app:layout_constraintTop_toBottomOf="@+id/update_des" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/update_max"
         android:layout_width="232dp"
         android:layout_height="45dp"
         android:layout_marginStart="64dp"
@@ -216,7 +216,7 @@
         android:text="@string/update_maxteams"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/min_tm_key" />
+        app:layout_constraintTop_toBottomOf="@+id/update_min" />
 
     <TextView
         android:id="@+id/create_heading"
@@ -249,7 +249,7 @@
         android:backgroundTint="@color/grey"
         android:text="@string/user_Update"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/update_max" />
 
     <Button
         android:id="@+id/cancle_button"
@@ -260,6 +260,6 @@
         android:backgroundTint="@color/grey"
         android:text="@string/user_Cancle"
         app:layout_constraintStart_toEndOf="@+id/update_button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/update_max" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
