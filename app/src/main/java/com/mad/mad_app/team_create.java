@@ -45,8 +45,8 @@ public class team_create extends AppCompatActivity {
 
         tmname = findViewById(R.id.editTextTextPersonName);
         tdesc = findViewById(R.id.editTextTextPersonName6);
-        registerBtn = findViewById(R.id.Btn_create);
-        registerQn = findViewById(R.id.Btn_cancel);
+        registerBtn = findViewById(R.id.save23);
+        registerQn = findViewById(R.id.button44);
         loader = new ProgressDialog(this);
 
         mAuth = FirebaseAuth.getInstance();

@@ -44,7 +44,7 @@ public class team_update extends AppCompatActivity {
 
         this.setTitle("Update Team");
 
-        Btn_update = findViewById(R.id.Btn_update);
+        Btn_update = findViewById(R.id.save23);
         Btn_cancel = findViewById(R.id.Btn_UCancel);
 
         Intent myIntent = getIntent();
