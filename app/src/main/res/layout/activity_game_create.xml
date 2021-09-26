@@ -110,7 +110,7 @@
 
 
     <EditText
-        android:id="@+id/create_teamname"
+        android:id="@+id/gnamekey"
         android:layout_width="227dp"
         android:layout_height="38dp"
         android:layout_marginStart="66dp"
@@ -126,7 +126,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <EditText
-        android:id="@+id/key_region"
+        android:id="@+id/update_region"
         android:layout_width="229dp"
         android:layout_height="38dp"
         android:layout_marginTop="12dp"
@@ -149,10 +149,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/create_teamname" />
+        app:layout_constraintTop_toBottomOf="@+id/gnamekey" />
 
     <EditText
-        android:id="@+id/descript_key"
+        android:id="@+id/update_des"
         android:layout_width="227dp"
         android:layout_height="38dp"
         android:layout_marginTop="12dp"
@@ -174,10 +174,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/key_region" />
+        app:layout_constraintTop_toBottomOf="@+id/update_region" />
 
     <EditText
-        android:id="@+id/min_tm_key"
+        android:id="@+id/update_min"
         android:layout_width="230dp"
         android:layout_height="39dp"
         android:layout_marginTop="12dp"
@@ -199,10 +199,10 @@
         android:text="@string/create_min_teams"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descript_key" />
+        app:layout_constraintTop_toBottomOf="@+id/update_des" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/update_max"
         android:layout_width="236dp"
         android:layout_height="39dp"
         android:layout_marginTop="16dp"
@@ -225,7 +225,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/min_tm_key" />
+        app:layout_constraintTop_toBottomOf="@+id/update_min" />
 
     <TextView
         android:id="@+id/textView9"
@@ -237,7 +237,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/update_max" />
 
     <TextView
         android:id="@+id/create_heading"

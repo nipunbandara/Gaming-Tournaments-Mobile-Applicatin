@@ -121,57 +121,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="346dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="272dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/cod_mw_name1"
-            android:layout_width="140dp"
-            android:layout_height="27dp"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/mobile_legends"
-            android:textSize="16sp" />
-
-        <Button
-            android:id="@+id/edit_btn_t11"
-            android:layout_width="76dp"
-            android:layout_height="33dp"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="50dp"
-            android:backgroundTint="@color/grey"
-            android:onClick="update_new_game"
-            android:text="EDIT"
-            android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
-
-        <Button
-            android:id="@+id/delete_btn_t12"
-            android:layout_width="76dp"
-            android:layout_height="33dp"
-            android:layout_marginStart="250dp"
-            android:layout_marginTop="50dp"
-            android:backgroundTint="@color/grey"
-            android:text="DELETE"
-            android:textSize="10sp"
-            app:layout_constraintStart_toEndOf="@+id/edit_btn_t1"
-            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
-
-        <ImageView
-            android:id="@+id/imageView112"
-            android:layout_width="127dp"
-            android:layout_height="162dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="-18dp"
-            app:srcCompat="@drawable/moblielegends" />
-
-    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/ID_tournament"
@@ -215,108 +165,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="346dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="420dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/cod_mw_name2"
-            android:layout_width="89dp"
-            android:layout_height="27dp"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/game_name_cod_mw"
-            android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/edit_btn_t12"
-            android:layout_width="76dp"
-            android:layout_height="33dp"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="50dp"
-            android:backgroundTint="@color/grey"
-            android:onClick="update_new_game"
-            android:text="EDIT"
-            android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="60dp">
 
-        <Button
-            android:id="@+id/delete_btn_t13"
-            android:layout_width="76dp"
-            android:layout_height="33dp"
-            android:layout_marginStart="250dp"
-            android:layout_marginTop="50dp"
-            android:backgroundTint="@color/grey"
-            android:text="DELETE"
-            android:textSize="10sp"
-            app:layout_constraintStart_toEndOf="@+id/edit_btn_t1"
-            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
-        <ImageView
-            android:id="@+id/imageView113"
-            android:layout_width="127dp"
-            android:layout_height="162dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="-18dp"
-            app:srcCompat="@drawable/cod" />
 
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="346dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="112dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            android:id="@+id/cod_mw_name"
-            android:layout_width="89dp"
-            android:layout_height="27dp"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/valorant_name"
-            android:textSize="16sp" />
-
-        <Button
-            android:id="@+id/edit_btn_t1"
-            android:layout_width="76dp"
-            android:layout_height="33dp"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="50dp"
-            android:backgroundTint="@color/grey"
-            android:onClick="update_new_game"
-            android:text="EDIT"
-            android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
-
-        <Button
-            android:id="@+id/delete_btn_t1"
-            android:layout_width="76dp"
-            android:layout_height="33dp"
-            android:layout_marginStart="250dp"
-            android:layout_marginTop="50dp"
-            android:backgroundTint="@color/grey"
-            android:text="DELETE"
-            android:textSize="10sp"
-            app:layout_constraintStart_toEndOf="@+id/edit_btn_t1"
-            app:layout_constraintTop_toBottomOf="@+id/tournament_name_31" />
-
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="127dp"
-            android:layout_height="162dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="-18dp"
-            app:srcCompat="@drawable/valo" />
-
-    </androidx.cardview.widget.CardView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

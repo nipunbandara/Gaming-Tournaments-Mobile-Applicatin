@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginStart="25dp"
+android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/cod_mw_name1"
+        android:layout_width="140dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/mobile_legends"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/edit_btn_t11"
+        android:layout_width="76dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/grey"
+        android:onClick="update_new_game"
+        android:text="EDIT"
+        android:textSize="10sp"
+       />
+
+    <Button
+        android:id="@+id/delete_btn_t12"
+        android:layout_width="76dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/grey"
+        android:text="DELETE"
+        android:textSize="10sp"
+         />
+
+    <ImageView
+        android:id="@+id/imageView112"
+        android:layout_width="127dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-18dp"
+        android:src="@drawable/cod"
+
+      />
+
+</androidx.cardview.widget.CardView>
